@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4d96b96ed0c48ae4fbcdca03bd553dab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _udonSharpBackingUdonBehaviour: {instanceID: 0}
+  - particleSystemToTrigger: {fileID: 6422971605348628502, guid: bf7530ec9fe15544a949685d9b323e1d,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

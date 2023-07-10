@@ -1,0 +1,391 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: startMove Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 071d46b58e8d19249b9af99c6ab71300,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export u\r\n    .export anim\r\n    .export
+    variabile\r\n    .export navmeshA\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour,
+    this\r\n    __value_0: %SystemBoolean, null\r\n    __instance_1: %UnityEngineAnimator,
+    null\r\n    __name_0: %SystemString, null\r\n    __value_1: %SystemBoolean, null\r\n   
+    __Boolean_0: %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n   
+    __Single_0: %SystemSingle, null\r\n    __Single_1: %SystemSingle, null\r\n   
+    __instance_2: %UnityEngineAINavMeshAgent, null\r\n    __Single_2: %SystemSingle,
+    null\r\n    __instance_3: %UnityEngineAnimator, null\r\n    __name_1: %SystemString,
+    null\r\n    __value_2: %SystemBoolean, null\r\n    __Boolean_2: %SystemBoolean,
+    null\r\n    __instance_4: %UnityEngineAnimator, null\r\n    __name_2: %SystemString,
+    null\r\n    __value_3: %SystemBoolean, null\r\n    __Boolean_3: %SystemBoolean,
+    null\r\n    __Boolean_4: %SystemBoolean, null\r\n    __Single_3: %SystemSingle,
+    null\r\n    __Single_4: %SystemSingle, null\r\n    __instance_5: %UnityEngineAINavMeshAgent,
+    null\r\n    __Single_5: %SystemSingle, null\r\n    __instance_6: %UnityEngineAnimator,
+    null\r\n    __name_3: %SystemString, null\r\n    __value_4: %SystemBoolean, null\r\n   
+    __Boolean_5: %SystemBoolean, null\r\n    npc: %UnityEngineGameObject, this\r\n   
+    u: %VRCUdonUdonBehaviour, this\r\n    anim: %UnityEngineAnimator, null\r\n   
+    variabile: %SystemString, null\r\n    navmeshA: %UnityEngineAINavMeshAgent, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, u\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __Boolean_0\r\n        PUSH,
+    __value_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH, __value_0\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, anim\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, variabile\r\n       
+    PUSH, __name_0\r\n        COPY\r\n        PUSH, __Boolean_0\r\n        PUSH,
+    __value_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH, __name_0\r\n       
+    PUSH, __value_1\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, navmeshA\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
+    __instance_2\r\n        PUSH, __Single_0\r\n        EXTERN, \"UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle\"\r\n       
+    PUSH, __Single_2\r\n        PUSH, __Single_1\r\n        COPY\r\n        PUSH,
+    __Single_0\r\n        PUSH, __Single_1\r\n        PUSH, __Boolean_1\r\n       
+    EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
+    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000170\r\n        PUSH, anim\r\n       
+    PUSH, __instance_3\r\n        COPY\r\n        PUSH, variabile\r\n        PUSH,
+    __name_1\r\n        COPY\r\n        PUSH, __Boolean_2\r\n        PUSH, __value_2\r\n       
+    COPY\r\n        PUSH, __instance_3\r\n        PUSH, __name_1\r\n        PUSH,
+    __value_2\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0x00000170\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _fixedUpdate\r\n   
+    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, anim\r\n        PUSH, __instance_4\r\n       
+    COPY\r\n        PUSH, variabile\r\n        PUSH, __name_2\r\n        COPY\r\n       
+    PUSH, __Boolean_3\r\n        PUSH, __value_3\r\n        COPY\r\n        PUSH,
+    __instance_4\r\n        PUSH, __name_2\r\n        PUSH, __value_3\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, navmeshA\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH,
+    __instance_5\r\n        PUSH, __Single_3\r\n        EXTERN, \"UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle\"\r\n       
+    PUSH, __Single_5\r\n        PUSH, __Single_4\r\n        COPY\r\n        PUSH,
+    __Single_3\r\n        PUSH, __Single_4\r\n        PUSH, __Boolean_4\r\n       
+    EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
+    PUSH, __Boolean_4\r\n        JUMP_IF_FALSE, 0x000002A8\r\n        PUSH, anim\r\n       
+    PUSH, __instance_6\r\n        COPY\r\n        PUSH, variabile\r\n        PUSH,
+    __name_3\r\n        COPY\r\n        PUSH, __Boolean_5\r\n        PUSH, __value_4\r\n       
+    COPY\r\n        PUSH, __instance_6\r\n        PUSH, __name_3\r\n        PUSH,
+    __value_4\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0x000002A8\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Event_Interact
+      uid: daaee4a4-a31e-476f-a150-a48caf6b9058
+      position: {x: 400, y: 200}
+      nodeUIDs: []
+      flowUIDs:
+      - fbcf7e99-7a35-4e7d-b877-ee4b38211b45
+      nodeValues: []
+    - fullName: Variable_UnityEngineGameObject
+      uid: 3b4951bd-dffe-4593-8ad0-0e5d6e534656
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|npc
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Const_SystemBoolean
+      uid: 5b4116d9-dceb-4064-87b9-1346207bd876
+      position: {x: 400, y: 540}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+    - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
+      uid: 5a026c4c-becf-4223-adea-5d72e7d95276
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|u
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 5d24785d-e275-49b5-b4c9-4fbcdab60dea
+      position: {x: 280, y: 480}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5a026c4c-becf-4223-adea-5d72e7d95276
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
+      uid: fbcf7e99-7a35-4e7d-b877-ee4b38211b45
+      position: {x: 620, y: 240}
+      nodeUIDs:
+      - 5d24785d-e275-49b5-b4c9-4fbcdab60dea|0
+      - 5b4116d9-dceb-4064-87b9-1346207bd876|0
+      flowUIDs:
+      - 98433a83-54d3-4166-bb20-36b3da68ad0c
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Variable_UnityEngineAnimator
+      uid: f3bcbe43-a897-4bd2-bbc1-15194977ed34
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|anim
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 723e6bfb-2bef-46f0-9b02-d05b77b488bb
+      position: {x: 600, y: 480}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|f3bcbe43-a897-4bd2-bbc1-15194977ed34
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid
+      uid: 98433a83-54d3-4166-bb20-36b3da68ad0c
+      position: {x: 880, y: 220}
+      nodeUIDs:
+      - 723e6bfb-2bef-46f0-9b02-d05b77b488bb|0
+      - baf610b5-1d9d-44e0-97b0-ca6c3f2f4707|0
+      - 5b4116d9-dceb-4064-87b9-1346207bd876|0
+      flowUIDs:
+      - 80c16b64-d11d-4963-8497-6eb1a0e80d3c
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Variable_SystemString
+      uid: 9677be20-4710-4ca1-8b4e-b2d1fe287005
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|variabile
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: baf610b5-1d9d-44e0-97b0-ca6c3f2f4707
+      position: {x: 620, y: 400}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|9677be20-4710-4ca1-8b4e-b2d1fe287005
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle
+      uid: 28f7d5a4-71c3-4daf-adf3-592eafe3bb82
+      position: {x: 1040, y: 480}
+      nodeUIDs:
+      - 551ecdb8-0235-4e8f-bfaa-930c9c353fdc|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Variable_UnityEngineAINavMeshAgent
+      uid: 78292f7c-2cec-4828-b749-e98c79fddbff
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|navmeshA
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 551ecdb8-0235-4e8f-bfaa-930c9c353fdc
+      position: {x: 800, y: 580}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|78292f7c-2cec-4828-b749-e98c79fddbff
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Branch
+      uid: 80c16b64-d11d-4963-8497-6eb1a0e80d3c
+      position: {x: 1280, y: 220}
+      nodeUIDs:
+      - aa8f2dda-0a9c-404a-93b6-99e569c28b69|0
+      flowUIDs:
+      - 333417fe-f398-4431-b91f-45207b9ae707
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Const_SystemSingle
+      uid: 72eda901-17fb-44ed-b67b-cc122e0fa024
+      position: {x: 1120, y: 600}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|4,5
+    - fullName: SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean
+      uid: aa8f2dda-0a9c-404a-93b6-99e569c28b69
+      position: {x: 1340, y: 480}
+      nodeUIDs:
+      - 28f7d5a4-71c3-4daf-adf3-592eafe3bb82|0
+      - 72eda901-17fb-44ed-b67b-cc122e0fa024|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid
+      uid: 333417fe-f398-4431-b91f-45207b9ae707
+      position: {x: 1440, y: 200}
+      nodeUIDs:
+      - b4c299b0-5f72-49f1-93d9-f627244bf725|0
+      - 25556c6f-6d06-4b13-a034-72cb85aa0a0b|0
+      - 31275bd5-3cb9-45a6-8999-fbdbef47ccc8|0
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Get_Variable
+      uid: 25556c6f-6d06-4b13-a034-72cb85aa0a0b
+      position: {x: 1140, y: 360}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|9677be20-4710-4ca1-8b4e-b2d1fe287005
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: b4c299b0-5f72-49f1-93d9-f627244bf725
+      position: {x: 1360, y: 420}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|f3bcbe43-a897-4bd2-bbc1-15194977ed34
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_SystemBoolean
+      uid: 31275bd5-3cb9-45a6-8999-fbdbef47ccc8
+      position: {x: 1580, y: 460}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: b088259a-b3a4-4490-bc09-837666f15e34
+      position: {x: 1080, y: 780}
+      nodeUIDs:
+      - 28f7d5a4-71c3-4daf-adf3-592eafe3bb82|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Event_FixedUpdate
+      uid: b7410427-d3e2-4b19-af4c-47c41225bbb3
+      position: {x: 480, y: 740}
+      nodeUIDs: []
+      flowUIDs:
+      - 98433a83-54d3-4166-bb20-36b3da68ad0c
+      nodeValues: []
+    updateOrder: 0
+  graphElementData: []
+  version: 1.0.0
+  showAssembly: 0
