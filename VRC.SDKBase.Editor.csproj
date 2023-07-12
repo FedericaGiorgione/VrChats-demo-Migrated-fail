@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6675EEDE-F229-9B3E-C637-0FBBEB7B9F84}</ProjectGuid>
+    <ProjectGuid>{1DFE4FB7-A201-F286-6F28-8FEDB683C6DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VRC.SDKBase.Editor</AssemblyName>
@@ -52,9 +52,6 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Oculus\Spatializer\ONSPAudioSourceEditor.cs" />
     <Compile Include="Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\Components\AutoAddSpatialAudioComponents.cs" />
@@ -312,6 +309,9 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
@@ -334,16 +334,7 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.10.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encodings.Web">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Json">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Json.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WatsonTcp">
       <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\CreatorCompanion\WatsonTcp.dll</HintPath>
@@ -476,6 +467,15 @@
     </Reference>
     <Reference Include="VRCSDK3">
       <HintPath>Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCSDK3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -852,7 +852,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VRC.SDKBase.csproj">
-      <Project>{3AE8F720-CE7B-2BF8-7C15-C98DDA9F4360}</Project>
+      <Project>{4695E91A-900D-0173-F5E5-3A38CFDF17DF}</Project>
       <Name>VRC.SDKBase</Name>
     </ProjectReference>
   </ItemGroup>

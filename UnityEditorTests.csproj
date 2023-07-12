@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{89DF7FB9-2577-3B61-C956-97F8979339F7}</ProjectGuid>
+    <ProjectGuid>{38668888-5C6F-817D-DB61-2CF7BB4AE37F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEditorTests</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.vrchat.worlds\Editor\Udon\UnityEditorTests\DataDictionaryTests.cs" />
@@ -260,6 +260,9 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
@@ -663,27 +666,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VRC.Udon.Editor.csproj">
-      <Project>{10C46CCA-1E0A-2952-F74F-05172FF84E1F}</Project>
+      <Project>{7622B046-7548-5F61-90C5-EE4EF24CF1D5}</Project>
       <Name>VRC.Udon.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.csproj">
-      <Project>{1ECC1ED8-7F8A-517B-E4C9-EB83A8F18CF9}</Project>
+      <Project>{D7C06965-898E-9846-0910-FF613E994537}</Project>
       <Name>VRC.Udon</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDK3.csproj">
-      <Project>{70F7CA2F-A51F-1844-2D83-69477C117C8B}</Project>
+      <Project>{ACEC6BAB-231C-A10F-2396-A8051E4CA09D}</Project>
       <Name>VRC.SDK3</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.csproj">
-      <Project>{3AE8F720-CE7B-2BF8-7C15-C98DDA9F4360}</Project>
+      <Project>{4695E91A-900D-0173-F5E5-3A38CFDF17DF}</Project>
       <Name>VRC.SDKBase</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDK3.Editor.csproj">
-      <Project>{9A1E6265-1493-A1A2-74D5-BBB02E4148D7}</Project>
+      <Project>{D32EE960-E894-EC25-5E66-789B12AAFCB5}</Project>
       <Name>VRC.SDK3.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.Editor.csproj">
-      <Project>{6675EEDE-F229-9B3E-C637-0FBBEB7B9F84}</Project>
+      <Project>{1DFE4FB7-A201-F286-6F28-8FEDB683C6DF}</Project>
       <Name>VRC.SDKBase.Editor</Name>
     </ProjectReference>
   </ItemGroup>

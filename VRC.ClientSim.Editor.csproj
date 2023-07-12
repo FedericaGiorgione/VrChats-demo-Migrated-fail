@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F00A1AD6-9379-06AA-BDFD-43AA3C8E0D3B}</ProjectGuid>
+    <ProjectGuid>{3BD01271-D35F-BF8C-07B1-0982E7C7AFC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VRC.ClientSim.Editor</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.vrchat.clientsim\Editor\ClientSimEditorRuntimeLinker.cs" />
@@ -262,6 +262,9 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
@@ -284,16 +287,7 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.10.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encodings.Web">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Json">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Json.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WatsonTcp">
       <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\CreatorCompanion\WatsonTcp.dll</HintPath>
@@ -805,15 +799,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VRC.ClientSim.csproj">
-      <Project>{F1D39B60-6921-7E4C-BF8C-2CF1446DFEA5}</Project>
+      <Project>{357B81DF-42A1-1078-C725-EE020D0ACC04}</Project>
       <Name>VRC.ClientSim</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.csproj">
-      <Project>{1ECC1ED8-7F8A-517B-E4C9-EB83A8F18CF9}</Project>
+      <Project>{D7C06965-898E-9846-0910-FF613E994537}</Project>
       <Name>VRC.Udon</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.Editor.csproj">
-      <Project>{10C46CCA-1E0A-2952-F74F-05172FF84E1F}</Project>
+      <Project>{7622B046-7548-5F61-90C5-EE4EF24CF1D5}</Project>
       <Name>VRC.Udon.Editor</Name>
     </ProjectReference>
   </ItemGroup>

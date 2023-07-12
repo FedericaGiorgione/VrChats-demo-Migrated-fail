@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3AE8F720-CE7B-2BF8-7C15-C98DDA9F4360}</ProjectGuid>
+    <ProjectGuid>{4695E91A-900D-0173-F5E5-3A38CFDF17DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VRC.SDKBase</AssemblyName>
@@ -53,9 +53,6 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Dependencies\Oculus\Spatializer\Scripts\ONSPAudioSource.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Dependencies\Oculus\Spatializer\Scripts\ONSPSettings.cs" />
     <Compile Include="Packages\com.vrchat.base\Runtime\VRCSDK\Dependencies\VRChat\Scripts\ApiFileHelper.cs" />
@@ -78,6 +75,7 @@
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\VRC.SDK3.Dynamics.Contact.dll" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\VRCCore-Standalone.dll" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\Mobile\VRChat-Mobile-Skybox.shader" />
+    <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\SDKBase-Legacy.dll" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Dependencies\librsync\librsync.net.dll" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\Mobile\VRChat-Mobile-Lightmapped.shader" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\PanoViewer\Panosphere.shader" />
@@ -114,7 +112,6 @@
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\VRCCore-Editor.dll" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\VRChat-Sprites-Default.shader" />
     <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Sample Assets\Shaders\Mobile\VRChat-Mobile-ToonLit.shader" />
-    <None Include="Packages\com.vrchat.base\Runtime\VRCSDK\Plugins\SDKBase-Legacy.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -309,6 +306,9 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
@@ -331,16 +331,7 @@
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.10.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Encodings.Web">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Json">
-      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Json.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WatsonTcp">
       <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\VRChat\CreatorCompanion\WatsonTcp.dll</HintPath>
@@ -473,6 +464,15 @@
     </Reference>
     <Reference Include="VRCSDK3">
       <HintPath>Packages\com.vrchat.worlds\Runtime\VRCSDK\Plugins\VRCSDK3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>Packages\com.vrchat.base\Editor\VRCSDK\Dependencies\Managed\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>

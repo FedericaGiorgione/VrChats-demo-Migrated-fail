@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E2A7A586-223D-DE54-7918-3DF0529D2239}</ProjectGuid>
+    <ProjectGuid>{D962F7C6-2CB8-801F-224B-F4BD7542D4B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UdonSharp.Editor</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2019.4.31f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Packages\com.vrchat.udonsharp\Editor\BuildUtilities\UdonSharpBuildChecks.cs" />
@@ -376,6 +376,9 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.31f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
@@ -797,23 +800,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VRC.Udon.csproj">
-      <Project>{1ECC1ED8-7F8A-517B-E4C9-EB83A8F18CF9}</Project>
+      <Project>{D7C06965-898E-9846-0910-FF613E994537}</Project>
       <Name>VRC.Udon</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.Editor.csproj">
-      <Project>{10C46CCA-1E0A-2952-F74F-05172FF84E1F}</Project>
+      <Project>{7622B046-7548-5F61-90C5-EE4EF24CF1D5}</Project>
       <Name>VRC.Udon.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.Serialization.OdinSerializer.csproj">
-      <Project>{EC832552-20BF-E77F-0393-A29896DDB4D1}</Project>
+      <Project>{ED46ACC7-71B4-4ACE-2157-FD4750E82056}</Project>
       <Name>VRC.Udon.Serialization.OdinSerializer</Name>
     </ProjectReference>
     <ProjectReference Include="UdonSharp.Runtime.csproj">
-      <Project>{9210F365-CDB5-DD70-A0F1-BF17ED600987}</Project>
+      <Project>{97E2C83D-68E5-089D-4348-15740669F5FD}</Project>
       <Name>UdonSharp.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="UdonSharp.Lib.csproj">
-      <Project>{7A194DA9-8C39-2DF6-C1FC-A4FEC5E5BFD1}</Project>
+      <Project>{98A9A6F7-074E-AD56-3105-461801521C2A}</Project>
       <Name>UdonSharp.Lib</Name>
     </ProjectReference>
   </ItemGroup>
