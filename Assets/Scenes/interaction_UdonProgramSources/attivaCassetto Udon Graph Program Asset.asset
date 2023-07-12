@@ -15,11 +15,13 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 1e36bbd02162b894aacb386801ce2ab4,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export anim\r\n    .export cassetto\r\n   
-    \r\n    __instance_0: %UnityEngineAnimator, null\r\n    __name_0: %SystemString,
-    null\r\n    __value_0: %SystemBoolean, null\r\n    __Boolean_0: %SystemBoolean,
-    null\r\n    __instance_1: %UnityEngineAnimator, null\r\n    __name_1: %SystemString,
-    null\r\n    anim: %UnityEngineAnimator, null\r\n    cassetto: %UnityEngineGameObject,
-    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
+    .export capsule1\r\n    \r\n    __instance_0: %UnityEngineAnimator, null\r\n   
+    __name_0: %SystemString, null\r\n    __value_0: %SystemBoolean, null\r\n    __instance_2:
+    %VRCSDK3ComponentsVRCPickup, null\r\n    __value_1: %SystemBoolean, null\r\n   
+    __Boolean_0: %SystemBoolean, null\r\n    __instance_1: %UnityEngineAnimator,
+    null\r\n    __name_1: %SystemString, null\r\n    anim: %UnityEngineAnimator,
+    null\r\n    cassetto: %UnityEngineGameObject, this\r\n    capsule1: %VRCSDK3ComponentsVRCPickup,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
     \r\n    _interact:\r\n    \r\n        PUSH, anim\r\n        PUSH, __instance_0\r\n       
     COPY\r\n        PUSH, anim\r\n        PUSH, __instance_1\r\n        COPY\r\n       
     PUSH, __instance_1\r\n        PUSH, __name_1\r\n        PUSH, __Boolean_0\r\n       
@@ -27,6 +29,10 @@ MonoBehaviour:
     PUSH, __Boolean_0\r\n        PUSH, __value_0\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __name_0\r\n        PUSH, __value_0\r\n       
     EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, capsule1\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
+    anim\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __value_0\r\n       
+    PUSH, __value_1\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH,
+    __value_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -178,12 +184,13 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid
       uid: 3de4d0ea-d38a-4258-900e-3d702433cd63
-      position: {x: 660, y: -260}
+      position: {x: 840, y: -300}
       nodeUIDs:
       - b5293a6c-908f-49ff-9d5d-e8ef2aa23851|0
       - 
       - 67d8494c-2c0d-46a0-8709-d0af27884135|0
-      flowUIDs: []
+      flowUIDs:
+      - 789ee734-3e91-4a64-98f3-809d60cfae12
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -224,6 +231,53 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|False
+    - fullName: VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean
+      uid: 789ee734-3e91-4a64-98f3-809d60cfae12
+      position: {x: 1120, y: -300}
+      nodeUIDs:
+      - 692878d9-12aa-48db-89f0-6af47028ea0e|0
+      - 67d8494c-2c0d-46a0-8709-d0af27884135|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Variable_VRCSDK3ComponentsVRCPickup
+      uid: 5b0e8c10-06f6-439e-9adc-9886cf6df9cf
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|capsule1
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 692878d9-12aa-48db-89f0-6af47028ea0e
+      position: {x: 1000, y: -480}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5b0e8c10-06f6-439e-9adc-9886cf6df9cf
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData: []
   version: 1.0.0

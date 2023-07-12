@@ -228,7 +228,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineUIText.__set_text__SystemString__SystemVoid
       uid: ff836981-2875-4c18-8979-2d0c31b1bb55
-      position: {x: 1040, y: 80}
+      position: {x: 1380, y: 40}
       nodeUIDs:
       - 
       - 
