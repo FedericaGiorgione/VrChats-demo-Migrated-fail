@@ -171,7 +171,7 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|-4,3
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|-4,304
     - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
       uid: c14cac40-4c55-4c3d-be24-ae52941c5e6f
       position: {x: -720, y: 220}
