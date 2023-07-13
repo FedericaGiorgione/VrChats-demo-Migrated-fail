@@ -15,12 +15,13 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: a638524c42e10c14aa71d14f5a7acc70,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export eventName\r\n    .export udonB\r\n   
-    .export eventName2\r\n    .export eventName3\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour,
-    this\r\n    __eventName_0: %SystemString, null\r\n    __instance_1: %VRCUdonUdonBehaviour,
-    this\r\n    __eventName_1: %SystemString, null\r\n    __instance_2: %VRCUdonUdonBehaviour,
-    this\r\n    __eventName_2: %SystemString, null\r\n    eventName: %SystemString,
-    null\r\n    udonB: %VRCUdonUdonBehaviour, this\r\n    eventName2: %SystemString,
-    null\r\n    eventName3: %SystemString, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export eventName2\r\n    .export eventName3\r\n    .export pickUP\r\n    \r\n   
+    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __eventName_0: %SystemString,
+    null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n    __eventName_1: %SystemString,
+    null\r\n    __instance_2: %VRCUdonUdonBehaviour, this\r\n    __eventName_2: %SystemString,
+    null\r\n    eventName: %SystemString, null\r\n    udonB: %VRCUdonUdonBehaviour,
+    this\r\n    eventName2: %SystemString, null\r\n    eventName3: %SystemString,
+    null\r\n    pickUP: %VRCSDK3ComponentsVRCPickup, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onPlayerTriggerEnter\r\n    \r\n    _onPlayerTriggerEnter:\r\n    \r\n       
     PUSH, udonB\r\n        PUSH, __instance_0\r\n        COPY\r\n        PUSH, eventName\r\n       
     PUSH, __eventName_0\r\n        COPY\r\n        PUSH, __instance_0\r\n       
@@ -246,6 +247,29 @@ MonoBehaviour:
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|eventName3
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Variable_VRCSDK3ComponentsVRCPickup
+      uid: 77aa504d-54bb-48a7-96d0-4a8fd6164a27
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|pickUP
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|True
