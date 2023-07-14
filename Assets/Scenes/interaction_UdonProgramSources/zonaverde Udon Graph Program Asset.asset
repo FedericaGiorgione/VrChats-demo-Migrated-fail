@@ -23,22 +23,19 @@ MonoBehaviour:
     __instance_3: %UnityEngineMeshCollider, null\r\n    __value_1: %SystemBoolean,
     null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __instance_4: %VRCUdonUdonBehaviour,
     this\r\n    __eventName_0: %SystemString, null\r\n    __String_1: %SystemString,
-    null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __a_1: %SystemString, null\r\n   
-    __b_1: %SystemString, null\r\n    __instance_5: %UnityEngineGameObject, this\r\n   
-    __instance_6: %UnityEngineCollider, null\r\n    onTriggerExitOther: %UnityEngineCollider,
-    null\r\n    __String_2: %SystemString, null\r\n    __instance_7: %UnityEngineMeshCollider,
-    null\r\n    __value_2: %SystemBoolean, null\r\n    __instance_8: %UnityEngineMeshCollider,
-    null\r\n    __value_3: %SystemBoolean, null\r\n    __Boolean_3: %SystemBoolean,
-    null\r\n    verde: %UnityEngineMeshCollider, null\r\n    rosso: %UnityEngineMeshCollider,
-    null\r\n    blu: %UnityEngineMeshCollider, null\r\n    udonBcollisiondete: %VRCUdonUdonBehaviour,
-    this\r\n    time: %SystemSingle, null\r\n    timeMax: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    null\r\n    __instance_5: %UnityEngineMeshCollider, null\r\n    __value_2: %SystemBoolean,
+    null\r\n    __instance_6: %UnityEngineMeshCollider, null\r\n    __value_3: %SystemBoolean,
+    null\r\n    __Boolean_2: %SystemBoolean, null\r\n    verde: %UnityEngineMeshCollider,
+    null\r\n    rosso: %UnityEngineMeshCollider, null\r\n    blu: %UnityEngineMeshCollider,
+    null\r\n    udonBcollisiondete: %VRCUdonUdonBehaviour, this\r\n    time: %SystemSingle,
+    null\r\n    timeMax: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onTriggerEnter\r\n    \r\n    _onTriggerEnter:\r\n    \r\n        PUSH,
     onTriggerEnterOther\r\n        PUSH, __instance_1\r\n        COPY\r\n       
     PUSH, __instance_1\r\n        PUSH, __instance_0\r\n        EXTERN, \"UnityEngineCollider.__get_gameObject__UnityEngineGameObject\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __a_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
     PUSH, __String_0\r\n        PUSH, __b_0\r\n        COPY\r\n        PUSH, __a_0\r\n       
     PUSH, __b_0\r\n        PUSH, __Boolean_0\r\n        EXTERN, \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000150\r\n        PUSH, rosso\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000001D0\r\n        PUSH, rosso\r\n       
     PUSH, __instance_2\r\n        COPY\r\n        PUSH, __Boolean_1\r\n        PUSH,
     __value_0\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH, __value_0\r\n       
     EXTERN, \"UnityEngineMeshCollider.__set_isTrigger__SystemBoolean__SystemVoid\"\r\n       
@@ -48,21 +45,13 @@ MonoBehaviour:
     PUSH, udonBcollisiondete\r\n        PUSH, __instance_4\r\n        COPY\r\n       
     PUSH, __String_1\r\n        PUSH, __eventName_0\r\n        COPY\r\n        PUSH,
     __instance_4\r\n        PUSH, __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x00000150\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onTriggerExit\r\n   
-    \r\n    _onTriggerExit:\r\n    \r\n        PUSH, onTriggerExitOther\r\n       
-    PUSH, __instance_6\r\n        COPY\r\n        PUSH, __instance_6\r\n        PUSH,
-    __instance_5\r\n        EXTERN, \"UnityEngineCollider.__get_gameObject__UnityEngineGameObject\"\r\n       
-    PUSH, __instance_5\r\n        PUSH, __a_1\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
-    PUSH, __String_2\r\n        PUSH, __b_1\r\n        COPY\r\n        PUSH, __a_1\r\n       
-    PUSH, __b_1\r\n        PUSH, __Boolean_2\r\n        EXTERN, \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x00000268\r\n        PUSH, rosso\r\n       
-    PUSH, __instance_7\r\n        COPY\r\n        PUSH, __Boolean_3\r\n        PUSH,
-    __value_2\r\n        COPY\r\n        PUSH, __instance_7\r\n        PUSH, __value_2\r\n       
-    EXTERN, \"UnityEngineMeshCollider.__set_isTrigger__SystemBoolean__SystemVoid\"\r\n       
-    PUSH, blu\r\n        PUSH, __instance_8\r\n        COPY\r\n        PUSH, __Boolean_3\r\n       
-    PUSH, __value_3\r\n        COPY\r\n        PUSH, __instance_8\r\n        PUSH,
+    PUSH, rosso\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH, __Boolean_2\r\n       
+    PUSH, __value_2\r\n        COPY\r\n        PUSH, __instance_5\r\n        PUSH,
+    __value_2\r\n        EXTERN, \"UnityEngineMeshCollider.__set_isTrigger__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, blu\r\n        PUSH, __instance_6\r\n        COPY\r\n        PUSH, __Boolean_2\r\n       
+    PUSH, __value_3\r\n        COPY\r\n        PUSH, __instance_6\r\n        PUSH,
     __value_3\r\n        EXTERN, \"UnityEngineMeshCollider.__set_isTrigger__SystemBoolean__SystemVoid\"\r\n       
-    JUMP, 0x00000268\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0x000001D0\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -232,7 +221,8 @@ MonoBehaviour:
       nodeUIDs:
       - f027ee15-d580-40b6-a798-522d2e4a930e|0
       - 87ae5827-872c-4927-b7ff-8e7ca4bd85a8|0
-      flowUIDs: []
+      flowUIDs:
+      - 0960d8bc-629a-45b6-869f-adb3c61c0157
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -311,10 +301,10 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Event_OnTriggerExit
       uid: 263d1658-187f-4d56-81be-b6f350d2a26f
-      position: {x: 102.99997, y: 653.06805}
+      position: {x: -45.961155, y: 623.7398}
       nodeUIDs: []
       flowUIDs:
-      - 5cbb1c2d-38cd-4a95-942b-d10a12c54a37
+      - 
       nodeValues: []
     - fullName: Branch
       uid: 5cbb1c2d-38cd-4a95-942b-d10a12c54a37
@@ -322,7 +312,7 @@ MonoBehaviour:
       nodeUIDs:
       - ccf7bf0a-c85f-4921-b6ff-4091c2eff9bd
       flowUIDs:
-      - 0960d8bc-629a-45b6-869f-adb3c61c0157
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
