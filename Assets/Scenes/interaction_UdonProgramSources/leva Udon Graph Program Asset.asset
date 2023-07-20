@@ -16,88 +16,74 @@ MonoBehaviour:
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export leva\r\n    .export valore\r\n   
     .export rigid\r\n    .export ruota\r\n    .export rigi\r\n    .export angularV\r\n   
-    \r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __symbolName_0: %SystemString,
-    null\r\n    __value_0: %SystemObject, null\r\n    __f_0: %SystemSingle, null\r\n   
-    __Single_0: %SystemSingle, null\r\n    __Single_1: %SystemSingle, null\r\n   
-    __Single_2: %SystemSingle, null\r\n    __Single_3: %SystemSingle, null\r\n   
-    __Single_4: %SystemSingle, null\r\n    __Single_5: %SystemSingle, null\r\n   
-    __instance_1: %UnityEngineVector3, null\r\n    __instance_2: %UnityEngineTransform,
-    this\r\n    __instance_3: %UnityEngineGameObject, this\r\n    __Single_6: %SystemSingle,
-    null\r\n    __instance_4: %UnityEngineRigidbody, null\r\n    __value_1: %UnityEngineVector3,
-    null\r\n    __Vector3_0: %UnityEngineVector3, null\r\n    __instance_5: %TMProTextMeshProUGUI,
-    null\r\n    __value_2: %SystemString, null\r\n    __instance_6: %SystemSingle,
-    null\r\n    __message_0: %SystemObject, null\r\n    __instance_7: %UnityEngineRigidbody,
-    null\r\n    __value_3: %UnityEngineVector3, null\r\n    __x_0: %SystemSingle,
-    null\r\n    __y_0: %SystemSingle, null\r\n    __Single_7: %SystemSingle, null\r\n   
-    __Single_8: %SystemSingle, null\r\n    __instance_8: %VRCUdonUdonBehaviour, this\r\n   
-    __symbolName_1: %SystemString, null\r\n    __value_4: %SystemObject, null\r\n   
-    __Single_9: %SystemSingle, null\r\n    __instance_9: %VRCUdonUdonBehaviour, this\r\n   
-    __symbolName_2: %SystemString, null\r\n    __value_5: %SystemObject, null\r\n   
-    __Single_A: %SystemSingle, null\r\n    __instance_A: %VRCUdonUdonBehaviour, this\r\n   
-    __symbolName_3: %SystemString, null\r\n    __value_6: %SystemObject, null\r\n   
-    __Single_B: %SystemSingle, null\r\n    __Single_C: %SystemSingle, null\r\n   
-    __instance_B: %VRCUdonUdonBehaviour, this\r\n    __symbolName_4: %SystemString,
-    null\r\n    __value_7: %SystemObject, null\r\n    __Single_D: %SystemSingle,
-    null\r\n    __instance_C: %VRCUdonUdonBehaviour, this\r\n    __symbolName_5:
-    %SystemString, null\r\n    __value_8: %SystemObject, null\r\n    __Single_E:
-    %SystemSingle, null\r\n    __instance_D: %VRCUdonUdonBehaviour, this\r\n    __symbolName_6:
-    %SystemString, null\r\n    __value_9: %SystemObject, null\r\n    __Single_F:
-    %SystemSingle, null\r\n    __Single_10: %SystemSingle, null\r\n    leva: %UnityEngineGameObject,
-    this\r\n    valore: %TMProTextMeshProUGUI, null\r\n    rigid: %UnityEngineRigidbody,
-    null\r\n    maxV: %SystemSingle, null\r\n    minV: %SystemSingle, null\r\n   
-    diff_Var: %SystemSingle, null\r\n    diff_Tot: %SystemSingle, null\r\n    ruota:
-    %UnityEngineGameObject, this\r\n    minRot: %SystemSingle, null\r\n    maxRot:
-    %SystemSingle, null\r\n    diffRotTot: %SystemSingle, null\r\n    rigi: %UnityEngineRigidbody,
-    null\r\n    angularV: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, leva\r\n       
-    PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH,
-    __instance_2\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
-    PUSH, __instance_2\r\n        PUSH, __instance_1\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
-    PUSH, __instance_1\r\n        PUSH, __Single_4\r\n        EXTERN, \"UnityEngineVector3.__get_x__SystemSingle\"\r\n       
-    PUSH, __Single_4\r\n        PUSH, minV\r\n        PUSH, __Single_2\r\n       
-    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __Single_2\r\n        PUSH, diff_Tot\r\n        PUSH, __Single_0\r\n       
-    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __Single_6\r\n        PUSH, __Single_1\r\n        COPY\r\n        PUSH,
-    __Single_0\r\n        PUSH, __Single_1\r\n        PUSH, __f_0\r\n        EXTERN,
-    \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __f_0\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineMathf.__Round__SystemSingle__SystemSingle\"\r\n       
-    PUSH, __instance_0\r\n        PUSH, __symbolName_0\r\n        PUSH, __value_0\r\n       
+    .export floatMIN\r\n    .export floatMAX\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_0: %SystemString, null\r\n    __value_0: %SystemObject,
+    null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n    __symbolName_1:
+    %SystemString, null\r\n    __value_1: %SystemObject, null\r\n    __instance_2:
+    %VRCUdonUdonBehaviour, this\r\n    __symbolName_2: %SystemString, null\r\n   
+    __value_2: %SystemObject, null\r\n    __Single_0: %SystemSingle, null\r\n   
+    __Single_1: %SystemSingle, null\r\n    __message_0: %SystemObject, null\r\n   
+    __instance_3: %UnityEngineVector3, null\r\n    __instance_6: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_3: %SystemString, null\r\n    __value_3: %SystemObject,
+    null\r\n    __f_0: %SystemSingle, null\r\n    __Single_2: %SystemSingle, null\r\n   
+    __Single_3: %SystemSingle, null\r\n    __Single_4: %SystemSingle, null\r\n   
+    __Single_5: %SystemSingle, null\r\n    __Single_6: %SystemSingle, null\r\n   
+    __Single_7: %SystemSingle, null\r\n    __instance_7: %UnityEngineVector3, null\r\n   
+    __instance_4: %UnityEngineTransform, this\r\n    __instance_5: %UnityEngineGameObject,
+    this\r\n    __Single_8: %SystemSingle, null\r\n    __instance_8: %UnityEngineRigidbody,
+    null\r\n    __value_4: %UnityEngineVector3, null\r\n    __Vector3_0: %UnityEngineVector3,
+    null\r\n    __instance_9: %TMProTextMeshProUGUI, null\r\n    __value_5: %SystemString,
+    null\r\n    __instance_A: %SystemSingle, null\r\n    __message_1: %SystemObject,
+    null\r\n    __instance_B: %UnityEngineRigidbody, null\r\n    __value_6: %UnityEngineVector3,
+    null\r\n    __x_0: %SystemSingle, null\r\n    __y_0: %SystemSingle, null\r\n   
+    __z_0: %SystemSingle, null\r\n    __Single_9: %SystemSingle, null\r\n    __Single_A:
+    %SystemSingle, null\r\n    leva: %UnityEngineGameObject, this\r\n    valore:
+    %TMProTextMeshProUGUI, null\r\n    rigid: %UnityEngineRigidbody, null\r\n   
+    maxV: %SystemSingle, null\r\n    minV: %SystemSingle, null\r\n    diff_Var: %SystemSingle,
+    null\r\n    diff_Tot: %SystemSingle, null\r\n    ruota: %UnityEngineGameObject,
+    this\r\n    minRot: %SystemSingle, null\r\n    maxRot: %SystemSingle, null\r\n   
+    diffRotTot: %SystemSingle, null\r\n    rigi: %UnityEngineRigidbody, null\r\n   
+    angularV: %SystemSingle, null\r\n    floatMIN: %SystemSingle, null\r\n    floatMAX:
+    %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _fixedUpdate\r\n   
+    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __instance_0\r\n        PUSH,
+    __symbolName_0\r\n        PUSH, floatMIN\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, __instance_1\r\n        PUSH, __symbolName_1\r\n        PUSH, floatMAX\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, rigid\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH, __Vector3_0\r\n       
-    PUSH, __value_1\r\n        COPY\r\n        PUSH, __instance_4\r\n        PUSH,
-    __value_1\r\n        EXTERN, \"UnityEngineRigidbody.__set_velocity__UnityEngineVector3__SystemVoid\"\r\n       
-    PUSH, valore\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH, diff_Var\r\n       
-    PUSH, __value_2\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
-    PUSH, __instance_5\r\n        PUSH, __value_2\r\n        EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
-    PUSH, diff_Var\r\n        PUSH, angularV\r\n        PUSH, __message_0\r\n       
-    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, maxV\r\n        PUSH, minV\r\n        PUSH, __value_2\r\n        EXTERN,
+    \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __symbolName_2\r\n        PUSH, __value_2\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, leva\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH, __instance_5\r\n       
+    PUSH, __instance_4\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
+    PUSH, __instance_4\r\n        PUSH, __instance_3\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
+    PUSH, __instance_3\r\n        PUSH, __message_0\r\n        EXTERN, \"UnityEngineVector3.__ToString__SystemString\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, rigi\r\n        PUSH, __instance_7\r\n        COPY\r\n        PUSH, __message_0\r\n       
-    PUSH, __x_0\r\n        COPY\r\n        PUSH, __message_0\r\n        PUSH, __y_0\r\n       
-    PUSH, __value_3\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle__UnityEngineVector3\"\r\n       
-    PUSH, __instance_7\r\n        PUSH, __value_3\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularVelocity__UnityEngineVector3__SystemVoid\"\r\n       
-    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _start\r\n    \r\n    _start:\r\n   
-    \r\n        PUSH, __Single_9\r\n        PUSH, __value_4\r\n        COPY\r\n       
-    PUSH, __instance_8\r\n        PUSH, __symbolName_1\r\n        PUSH, __value_4\r\n       
+    PUSH, leva\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH, __instance_3\r\n       
+    PUSH, __instance_7\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH,
+    __Single_6\r\n        EXTERN, \"UnityEngineVector3.__get_z__SystemSingle\"\r\n       
+    PUSH, __Single_6\r\n        PUSH, minV\r\n        PUSH, __Single_4\r\n       
+    EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __Single_4\r\n        PUSH, diff_Tot\r\n        PUSH, __Single_2\r\n       
+    EXTERN, \"SystemSingle.__op_Division__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __Single_8\r\n        PUSH, __Single_3\r\n        COPY\r\n        PUSH,
+    __Single_2\r\n        PUSH, __Single_3\r\n        PUSH, __f_0\r\n        EXTERN,
+    \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __f_0\r\n        PUSH, __value_3\r\n        EXTERN, \"UnityEngineMathf.__Round__SystemSingle__SystemSingle\"\r\n       
+    PUSH, __instance_6\r\n        PUSH, __symbolName_3\r\n        PUSH, __value_3\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __Single_A\r\n        PUSH, __value_5\r\n        COPY\r\n        PUSH,
-    __instance_9\r\n        PUSH, __symbolName_2\r\n        PUSH, __value_5\r\n       
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, maxV\r\n        PUSH, minV\r\n        PUSH, __value_6\r\n        EXTERN,
-    \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __instance_A\r\n        PUSH, __symbolName_3\r\n        PUSH, __value_6\r\n       
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __Single_D\r\n        PUSH, __value_7\r\n        COPY\r\n        PUSH,
-    __instance_B\r\n        PUSH, __symbolName_4\r\n        PUSH, __value_7\r\n       
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __Single_E\r\n        PUSH, __value_8\r\n        COPY\r\n        PUSH,
-    __instance_C\r\n        PUSH, __symbolName_5\r\n        PUSH, __value_8\r\n       
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, maxRot\r\n        PUSH, minRot\r\n        PUSH, __value_9\r\n        EXTERN,
-    \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __instance_D\r\n        PUSH, __symbolName_6\r\n        PUSH, __value_9\r\n       
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, rigid\r\n        PUSH, __instance_8\r\n        COPY\r\n        PUSH, __Vector3_0\r\n       
+    PUSH, __value_4\r\n        COPY\r\n        PUSH, __instance_8\r\n        PUSH,
+    __value_4\r\n        EXTERN, \"UnityEngineRigidbody.__set_velocity__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, valore\r\n        PUSH, __instance_9\r\n        COPY\r\n        PUSH, diff_Var\r\n       
+    PUSH, __value_5\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
+    PUSH, __instance_9\r\n        PUSH, __value_5\r\n        EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
+    PUSH, diff_Var\r\n        PUSH, angularV\r\n        PUSH, __message_1\r\n       
+    EXTERN, \"SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    PUSH, rigi\r\n        PUSH, __instance_B\r\n        COPY\r\n        PUSH, __message_1\r\n       
+    PUSH, __z_0\r\n        COPY\r\n        PUSH, __x_0\r\n        PUSH, __y_0\r\n       
+    PUSH, __message_1\r\n        PUSH, __value_6\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n       
+    PUSH, __instance_B\r\n        PUSH, __value_6\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularVelocity__UnityEngineVector3__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -140,10 +126,10 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_FixedUpdate
       uid: ea420e3d-f170-4a98-9b71-d02c1da6141d
-      position: {x: 280, y: 100}
+      position: {x: 20, y: 60}
       nodeUIDs: []
       flowUIDs:
-      - 03d4a506-aa44-476a-b573-6fcf4a358f55
+      - 1b2b067c-3cd1-4b38-b03b-bbab8a95cf50
       nodeValues: []
     - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
       uid: b93db5db-06e0-421d-ad81-d8c713de11c9
@@ -156,22 +142,22 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemSingle
       uid: f7d6a29a-8a33-44b3-8f42-961f966258b2
-      position: {x: -1120, y: 920}
+      position: {x: -1320, y: 980}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|-5,244
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1,26
     - fullName: Const_SystemSingle
       uid: e7fd96c4-b82e-4f9e-b910-0c2b6801cbbe
-      position: {x: -1400, y: 920}
+      position: {x: -1580, y: 960}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|-4,304
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0,206
     - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
       uid: c14cac40-4c55-4c3d-be24-ae52941c5e6f
       position: {x: -720, y: 220}
@@ -183,7 +169,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineVector3.__get_z__SystemSingle
       uid: 33b6b423-3ce0-4424-88c5-d17a60d6bcd0
-      position: {x: -540, y: 80}
+      position: {x: -520, y: 80}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -347,7 +333,7 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 
-      - e7fd96c4-b82e-4f9e-b910-0c2b6801cbbe|0
+      - e73de3c0-224c-4c65-a4af-f83b98979e48|0
       flowUIDs:
       - 5f3fc977-2d9e-4ecb-973b-58a9711450cd
       nodeValues:
@@ -359,10 +345,10 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_Start
       uid: 611f1c9a-5936-4f39-9b0e-f93297ca2b83
-      position: {x: -1560, y: 760}
+      position: {x: -1700, y: 640}
       nodeUIDs: []
       flowUIDs:
-      - 1b2b067c-3cd1-4b38-b03b-bbab8a95cf50
+      - 
       nodeValues: []
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
       uid: 5f3fc977-2d9e-4ecb-973b-58a9711450cd
@@ -370,7 +356,7 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 
-      - f7d6a29a-8a33-44b3-8f42-961f966258b2|0
+      - eef8f9a9-0942-4844-a0c4-413c8a81ca63|0
       flowUIDs:
       - 8dcdb58e-9434-4bc5-b5f6-7e76c5daaa7d
       nodeValues:
@@ -434,7 +420,7 @@ MonoBehaviour:
       - 
       - 744db413-25b3-4df9-91e5-004d1c3007f4|0
       flowUIDs:
-      - 85493016-491e-4456-872e-1a5e27c6ff05
+      - 235ad313-6291-4aab-b4c3-93cc8377b718
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -508,7 +494,7 @@ MonoBehaviour:
       uid: bcf12c6b-4a3c-4cc6-bf41-be0da328914b
       position: {x: -180, y: 460}
       nodeUIDs:
-      - a4707d42-2ec6-401a-8c8b-085d9637ebba|0
+      - 14818325-7282-45f9-83ba-f8da377498f4|0
       - 8fd70ec6-7d90-4c97-a005-6eee530b01c4|0
       flowUIDs: []
       nodeValues:
@@ -569,7 +555,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|100
     - fullName: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
       uid: 744db413-25b3-4df9-91e5-004d1c3007f4
-      position: {x: -720, y: 940}
+      position: {x: -540, y: 920}
       nodeUIDs:
       - 0ba404d4-47e4-4bf4-bd79-2ec0c1c98d92|0
       - 6f6f8f2e-1532-4072-a30f-233064024679|0
@@ -581,9 +567,9 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineVector3.__get_x__SystemSingle
       uid: a4707d42-2ec6-401a-8c8b-085d9637ebba
-      position: {x: -500, y: 220}
+      position: {x: -520, y: -0}
       nodeUIDs:
-      - c14cac40-4c55-4c3d-be24-ae52941c5e6f|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -793,7 +779,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_UnityEngineVector3
       uid: a3544302-0e10-4f5d-9eac-baaa1d607b0f
-      position: {x: 480, y: -180}
+      position: {x: 520, y: -160}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -826,7 +812,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: ccd14fc1-ea27-49b8-94b7-122a4e56d3ea
-      position: {x: 1260, y: 240}
+      position: {x: 1480, y: -20}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -848,14 +834,17 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
-    - fullName: UnityEngineVector3.__ctor__SystemSingle_SystemSingle__UnityEngineVector3
+    - fullName: UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3
       uid: 190ae2e5-af39-46a2-bc06-8a767b48fc7b
-      position: {x: 1260, y: 400}
+      position: {x: 1340, y: 400}
       nodeUIDs:
-      - 28f82a4e-a371-4b95-82e3-33e2dbbb31cd|0
       - 
+      - 
+      - 28f82a4e-a371-4b95-82e3-33e2dbbb31cd|0
       flowUIDs: []
       nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
       - unityObjectValue: {fileID: 0}
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
       - unityObjectValue: {fileID: 0}
@@ -910,9 +899,109 @@ MonoBehaviour:
       uid: 235ad313-6291-4aab-b4c3-93cc8377b718
       position: {x: 20, y: 240}
       nodeUIDs:
+      - 77946c96-7f40-4092-853a-35046b6549e8|0
+      flowUIDs:
+      - 03d4a506-aa44-476a-b573-6fcf4a358f55
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineVector3.__ToString__SystemString
+      uid: 77946c96-7f40-4092-853a-35046b6549e8
+      position: {x: -220, y: 160}
+      nodeUIDs:
+      - c14cac40-4c55-4c3d-be24-ae52941c5e6f|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+    - fullName: Get_Variable
+      uid: 37cd091c-b1dd-45d4-a89e-f7375af8c240
+      position: {x: -420, y: 660}
+      nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|30f6eb87-59b7-474f-a5fe-074379fbe626
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineVector3.__get_z__SystemSingle
+      uid: 14818325-7282-45f9-83ba-f8da377498f4
+      position: {x: -440, y: 380}
+      nodeUIDs:
+      - c14cac40-4c55-4c3d-be24-ae52941c5e6f|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+    - fullName: Variable_SystemSingle
+      uid: 64839e7d-9346-41c3-a033-3ea320b8913f
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|floatMIN
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Variable_SystemSingle
+      uid: 0bc4c249-c465-4f61-a03b-e751bf8e41eb
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|floatMAX
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: e73de3c0-224c-4c65-a4af-f83b98979e48
+      position: {x: -1800, y: 980}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|64839e7d-9346-41c3-a033-3ea320b8913f
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: eef8f9a9-0942-4844-a0c4-413c8a81ca63
+      position: {x: -1780, y: 1100}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0bc4c249-c465-4f61-a03b-e751bf8e41eb
       - unityObjectValue: {fileID: 0}
         stringValue: 
     updateOrder: 0

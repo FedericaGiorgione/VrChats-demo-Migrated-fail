@@ -29,14 +29,14 @@ MonoBehaviour:
     nodes:
     - fullName: Event_Interact
       uid: 112a22fb-b15d-411a-a848-2e881395abb2
-      position: {x: 358.96762, y: -85.90857}
+      position: {x: 360, y: -80}
       nodeUIDs: []
       flowUIDs:
       - de1ac8ab-5198-44bb-bbce-ac3f7db76e1b
       nodeValues: []
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: de1ac8ab-5198-44bb-bbce-ac3f7db76e1b
-      position: {x: 743.3225, y: -80.99205}
+      position: {x: 740, y: -80}
       nodeUIDs:
       - e79dc968-0f0e-4c69-8356-397d2e37b905|0
       - 12402ab0-ca90-43d9-8ff3-b6ff9bd0bea6|0
@@ -94,7 +94,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: e79dc968-0f0e-4c69-8356-397d2e37b905
-      position: {x: 578.25714, y: 169.14287}
+      position: {x: 580, y: 160}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -105,7 +105,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 12402ab0-ca90-43d9-8ff3-b6ff9bd0bea6
-      position: {x: 549.7143, y: 94.085724}
+      position: {x: 540, y: 100}
       nodeUIDs:
       - 
       flowUIDs: []

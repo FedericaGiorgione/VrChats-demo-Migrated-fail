@@ -263,15 +263,6 @@ MonoBehaviour:
       flowUIDs:
       - b349ddc4-988d-4e3b-987d-cd7316dd8dd3
       nodeValues: []
-    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
-      uid: 4dc7ca22-5dd5-4914-94e1-b89513609493
-      position: {x: 1340, y: 400}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
       uid: 615a2f03-e3a2-4b17-a6bd-147f99c3b563
       position: {x: 680, y: 1580}

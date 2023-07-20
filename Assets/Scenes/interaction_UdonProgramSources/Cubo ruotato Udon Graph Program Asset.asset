@@ -56,18 +56,9 @@ MonoBehaviour:
     name: 
     description: 
     nodes:
-    - fullName: UnityEngineCollision.__get_gameObject__UnityEngineGameObject
-      uid: cc1e84e5-aa3d-46af-b6a2-fe7718f58047
-      position: {x: 100, y: 200}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
     - fullName: UnityEngineGameObject.__get_name__SystemString
       uid: 3eb09528-280d-4d4f-a661-f636e6de9c0e
-      position: {x: 640, y: 140}
+      position: {x: 60, y: 100}
       nodeUIDs:
       - 27db3307-5972-455d-ae75-0903b7e2fc25|0
       flowUIDs: []
@@ -99,7 +90,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 53640584-7e95-491b-8600-643567e05377
-      position: {x: 660, y: 240}
+      position: {x: 300, y: 200}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -110,7 +101,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemString.__Contains__SystemString__SystemBoolean
       uid: 92ab5e86-b902-422a-9548-1813a5bca70d
-      position: {x: 840, y: 200}
+      position: {x: 480, y: 100}
       nodeUIDs:
       - 3eb09528-280d-4d4f-a661-f636e6de9c0e|0
       - 53640584-7e95-491b-8600-643567e05377|0
@@ -122,7 +113,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: 61fbb71a-fd8f-4cbe-838b-fb738d2c0686
-      position: {x: 1120, y: -100}
+      position: {x: 1140, y: -240}
       nodeUIDs:
       - 77050d46-355b-448f-994d-bf710830bb81|0
       - 01fbade9-d1d7-4466-a4c1-76635435eed8|0
@@ -134,7 +125,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 70be5868-0152-459b-9694-221ba9529c18
-      position: {x: 840, y: -100}
+      position: {x: 700, y: -100}
       nodeUIDs:
       - 92ab5e86-b902-422a-9548-1813a5bca70d|0
       flowUIDs:
@@ -191,7 +182,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 77050d46-355b-448f-994d-bf710830bb81
-      position: {x: 1160, y: 80}
+      position: {x: 920, y: 20}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -202,7 +193,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 01fbade9-d1d7-4466-a4c1-76635435eed8
-      position: {x: 1000, y: 80}
+      position: {x: 980, y: -60}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -223,7 +214,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 81f661b5-b12c-4ebe-921a-014b3b045862
-      position: {x: 800, y: -320}
+      position: {x: 740, y: -340}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -233,14 +224,14 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|l'elemtento \xE8 corretto"
     - fullName: Event_OnTriggerEnter
       uid: 84f3a262-70dc-404a-8c22-22c9304f6a2b
-      position: {x: 220, y: 20}
+      position: {x: -200, y: -100}
       nodeUIDs: []
       flowUIDs:
       - 70be5868-0152-459b-9694-221ba9529c18
       nodeValues: []
     - fullName: UnityEngineCollider.__get_gameObject__UnityEngineGameObject
       uid: 27db3307-5972-455d-ae75-0903b7e2fc25
-      position: {x: 360, y: 180}
+      position: {x: 20, y: 20}
       nodeUIDs:
       - 84f3a262-70dc-404a-8c22-22c9304f6a2b|0
       flowUIDs: []
@@ -249,7 +240,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_OnTriggerExit
       uid: 6f04bbba-71b8-4dd7-a01b-78d92823cb86
-      position: {x: 240, y: 420}
+      position: {x: -20, y: 420}
       nodeUIDs: []
       flowUIDs:
       - 4e657e2f-d327-451e-93b8-53fa63ddf4da
@@ -363,6 +354,13 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Event_OnTriggerStay
+      uid: 695c285c-e707-4356-98e5-ddd63c858551
+      position: {x: -540, y: -140}
+      nodeUIDs: []
+      flowUIDs:
+      - 
+      nodeValues: []
     updateOrder: 0
   graphElementData: []
   version: 1.0.0
