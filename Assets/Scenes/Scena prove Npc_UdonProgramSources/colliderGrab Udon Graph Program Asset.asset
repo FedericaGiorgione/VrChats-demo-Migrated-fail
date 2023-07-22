@@ -41,7 +41,7 @@ MonoBehaviour:
     nodes:
     - fullName: Event_OnTriggerEnter
       uid: 668c4e51-0f40-46d9-851c-4ebe600ff210
-      position: {x: -25.626236, y: -68.43745}
+      position: {x: -140, y: -80}
       nodeUIDs: []
       flowUIDs:
       - 3ecfd028-099b-448f-90bd-af3b50fff9b0
@@ -94,7 +94,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 1563f1f9-0a29-4356-8b77-820a10eed46c
-      position: {x: 775.04175, y: 65.72961}
+      position: {x: 780, y: 60}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -128,7 +128,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 35d6271f-7944-47c1-a569-cf62b34cfd3f
-      position: {x: 788.0418, y: 143.72963}
+      position: {x: 780, y: 140}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -139,7 +139,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: fd357c2d-e2b6-4cfc-8a21-bdc9ac5d61bd
-      position: {x: 777.0417, y: -69.27042}
+      position: {x: 780, y: -60}
       nodeUIDs:
       - 1563f1f9-0a29-4356-8b77-820a10eed46c|0
       - 35d6271f-7944-47c1-a569-cf62b34cfd3f|0
@@ -151,7 +151,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 3ecfd028-099b-448f-90bd-af3b50fff9b0
-      position: {x: 610.6461, y: -71.813156}
+      position: {x: 620, y: -80}
       nodeUIDs:
       - bea83d91-179a-4332-a2dc-df44b4b69782|0
       flowUIDs:
@@ -162,7 +162,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: c92dfce6-0432-4066-84ca-529e5067b4f2
-      position: {x: 538.4791, y: -261.54196}
+      position: {x: 540, y: -260}
       nodeUIDs:
       - b6f85014-26b0-4aaa-94c0-ed64cfac2a2c|0
       flowUIDs: []
@@ -171,7 +171,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 0f189d4c-23fd-4c9f-9057-d1af9e1ff777
-      position: {x: 72.683876, y: -338.7515}
+      position: {x: 80, y: -340}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -181,7 +181,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|verificato collisione con: '
     - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
       uid: b6f85014-26b0-4aaa-94c0-ed64cfac2a2c
-      position: {x: 268.01987, y: -255.02383}
+      position: {x: 260, y: -260}
       nodeUIDs:
       - 0f189d4c-23fd-4c9f-9057-d1af9e1ff777|0
       - 767bb4b9-71f5-4447-9ca6-77dbbed82764|0
@@ -193,7 +193,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineCollider.__get_gameObject__UnityEngineGameObject
       uid: ae64278a-73a4-469f-b405-b79065e6c96a
-      position: {x: 228.13124, y: 322.4255}
+      position: {x: 220, y: 320}
       nodeUIDs:
       - 668c4e51-0f40-46d9-851c-4ebe600ff210|0
       flowUIDs: []
@@ -202,7 +202,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineGameObject.__get_name__SystemString
       uid: 767bb4b9-71f5-4447-9ca6-77dbbed82764
-      position: {x: 263.40747, y: 238.4374}
+      position: {x: 260, y: 240}
       nodeUIDs:
       - ae64278a-73a4-469f-b405-b79065e6c96a|0
       flowUIDs: []
@@ -234,7 +234,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 15c3544c-fb6d-4a67-abd2-f9eb27853ef8
-      position: {x: 484, y: 262.24}
+      position: {x: 480, y: 260}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -245,7 +245,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemString.__Equals__SystemString_SystemString__SystemBoolean
       uid: bea83d91-179a-4332-a2dc-df44b4b69782
-      position: {x: 420, y: 36}
+      position: {x: 420, y: 40}
       nodeUIDs:
       - 15c3544c-fb6d-4a67-abd2-f9eb27853ef8|0
       - 767bb4b9-71f5-4447-9ca6-77dbbed82764|0

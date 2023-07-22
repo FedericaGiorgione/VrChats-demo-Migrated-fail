@@ -50,14 +50,10 @@ MonoBehaviour:
     this\r\n    __instance_6: %UnityEngineCollider, null\r\n    __instance_B: %UnityEngineVector3,
     null\r\n    __instance_2: %UnityEngineTransform, this\r\n    __Single_7: %SystemSingle,
     null\r\n    __instance_E: %TMProTextMeshProUGUI, null\r\n    __value_2: %SystemString,
-    null\r\n    __String_B: %SystemString, null\r\n    __Boolean_A: %SystemBoolean,
-    null\r\n    __instance_F: %UnityEngineCollider, null\r\n    __other_1: %SystemObject,
-    null\r\n    onTriggerExitOther: %UnityEngineCollider, null\r\n    __instance_10:
-    %TMProTextMeshProUGUI, null\r\n    __value_3: %SystemString, null\r\n    __String_C:
-    %SystemString, null\r\n    sfera_1: %UnityEngineCollider, null\r\n    target:
-    %UnityEngineGameObject, this\r\n    target_1: %UnityEngineTransform, this\r\n   
-    maxBlu: %SystemSingle, null\r\n    maxVerde: %SystemSingle, null\r\n    maxRosso:
-    %SystemSingle, null\r\n    testoVariabile: %TMProTextMeshProUGUI, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    null\r\n    __String_B: %SystemString, null\r\n    sfera_1: %UnityEngineCollider,
+    null\r\n    target: %UnityEngineGameObject, this\r\n    target_1: %UnityEngineTransform,
+    this\r\n    maxBlu: %SystemSingle, null\r\n    maxVerde: %SystemSingle, null\r\n   
+    maxRosso: %SystemSingle, null\r\n    testoVariabile: %TMProTextMeshProUGUI, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onTriggerEnter\r\n    \r\n    _onTriggerEnter:\r\n    \r\n        PUSH,
     onTriggerEnterOther\r\n        PUSH, __instance_0\r\n        COPY\r\n       
     PUSH, sfera_1\r\n        PUSH, __other_0\r\n        COPY\r\n        PUSH, __instance_0\r\n       
@@ -193,15 +189,7 @@ MonoBehaviour:
     __value_2\r\n        COPY\r\n        PUSH, __instance_E\r\n        PUSH, __value_2\r\n       
     EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
     JUMP, 0x00000B38\r\n        JUMP, 0x00000B40\r\n        JUMP, 0xFFFFFFFC\r\n   
-    \r\n    .export _onTriggerExit\r\n    \r\n    _onTriggerExit:\r\n    \r\n       
-    PUSH, onTriggerExitOther\r\n        PUSH, __instance_F\r\n        COPY\r\n       
-    PUSH, sfera_1\r\n        PUSH, __other_1\r\n        COPY\r\n        PUSH, __instance_F\r\n       
-    PUSH, __other_1\r\n        PUSH, __Boolean_A\r\n        EXTERN, \"UnityEngineCollider.__Equals__SystemObject__SystemBoolean\"\r\n       
-    PUSH, __Boolean_A\r\n        JUMP_IF_FALSE, 0x00000BE8\r\n        PUSH, testoVariabile\r\n       
-    PUSH, __instance_10\r\n        COPY\r\n        PUSH, __String_C\r\n        PUSH,
-    __value_3\r\n        COPY\r\n        PUSH, __instance_10\r\n        PUSH, __value_3\r\n       
-    EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x00000BE8\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -1009,10 +997,10 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_OnTriggerExit
       uid: 286b75bb-ef98-4ec2-8c62-648b19472027
-      position: {x: 1480, y: 460}
+      position: {x: 740, y: 460}
       nodeUIDs: []
       flowUIDs:
-      - 06fd1b06-c6a9-4043-a809-9d3431b106e5
+      - 
       nodeValues: []
     - fullName: TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid
       uid: 57cd2a3c-6395-4071-b219-264034b19859
@@ -1028,7 +1016,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 4274635a-06d9-4567-a6b4-29b1c85f5649
-      position: {x: 1460, y: 700}
+      position: {x: 960, y: 700}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -1039,7 +1027,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineCollider.__Equals__SystemObject__SystemBoolean
       uid: 47a79de7-5539-41cd-8f05-56dd3a7ce84b
-      position: {x: 1680, y: 620}
+      position: {x: 980, y: 600}
       nodeUIDs:
       - 286b75bb-ef98-4ec2-8c62-648b19472027|0
       - 4274635a-06d9-4567-a6b4-29b1c85f5649
