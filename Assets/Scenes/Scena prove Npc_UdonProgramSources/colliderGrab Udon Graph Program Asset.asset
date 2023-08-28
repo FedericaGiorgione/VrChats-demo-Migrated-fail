@@ -171,7 +171,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 0f189d4c-23fd-4c9f-9057-d1af9e1ff777
-      position: {x: 80, y: -340}
+      position: {x: -0, y: -380}
       nodeUIDs:
       - 
       flowUIDs: []

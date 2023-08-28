@@ -55,14 +55,14 @@ MonoBehaviour:
     nodes:
     - fullName: Event_InputGrab
       uid: 192cd06f-413a-4417-82dd-112ee76e2b2b
-      position: {x: 321, y: 261}
+      position: {x: 320, y: 260}
       nodeUIDs: []
       flowUIDs:
       - 
       nodeValues: []
     - fullName: Branch
       uid: 5c42ac23-a3f7-4fe1-bc21-a8f761ec8d28
-      position: {x: 664, y: 123}
+      position: {x: 660, y: 120}
       nodeUIDs:
       - 192cd06f-413a-4417-82dd-112ee76e2b2b|0
       flowUIDs:
@@ -73,20 +73,20 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Event_FixedUpdate
       uid: e459b999-6f28-4f0d-bb47-e84d1228e883
-      position: {x: 433.18674, y: 90.55363}
+      position: {x: 440, y: 100}
       nodeUIDs: []
       flowUIDs:
       - 5c42ac23-a3f7-4fe1-bc21-a8f761ec8d28
       nodeValues: []
     - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
       uid: 826373ed-5306-46f5-88a2-9ba3ccc585d8
-      position: {x: 759, y: 303}
+      position: {x: 760, y: 300}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3
       uid: 25576645-e0eb-4872-bb8d-1adf9fb5fc93
-      position: {x: 730, y: 384}
+      position: {x: 720, y: 380}
       nodeUIDs:
       - 826373ed-5306-46f5-88a2-9ba3ccc585d8|0
       - 
@@ -99,7 +99,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|LeftHand
     - fullName: VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3
       uid: 004b2e66-f131-4864-a375-0087c99d0210
-      position: {x: 737, y: 501.72}
+      position: {x: 740, y: 500}
       nodeUIDs:
       - 826373ed-5306-46f5-88a2-9ba3ccc585d8|0
       - 
@@ -112,7 +112,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|RightHand
     - fullName: UnityEngineVector3.__op_Subtraction__UnityEngineVector3_UnityEngineVector3__UnityEngineVector3
       uid: a463930b-2d0d-4f92-879d-73868eef2a9d
-      position: {x: 1021.55005, y: 421.95004}
+      position: {x: 1020, y: 420}
       nodeUIDs:
       - 25576645-e0eb-4872-bb8d-1adf9fb5fc93|0
       - 004b2e66-f131-4864-a375-0087c99d0210|0
@@ -126,7 +126,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: UnityEngineVector3.__get_x__SystemSingle
       uid: 436bfc8c-42a4-4078-8963-acbe70f3abf2
-      position: {x: 1205.7426, y: 432.83752}
+      position: {x: 1200, y: 440}
       nodeUIDs:
       - a463930b-2d0d-4f92-879d-73868eef2a9d|0
       flowUIDs: []
@@ -159,7 +159,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 26d4c125-24c8-4b08-b7d1-50175ef4efc5
-      position: {x: 1187.169, y: 21.143124}
+      position: {x: 1180, y: 20}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -170,7 +170,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
       uid: 2cac1f01-4451-4853-ba93-c4bd61de5512
-      position: {x: 1204.0616, y: 104.52087}
+      position: {x: 1200, y: 100}
       nodeUIDs:
       - 26d4c125-24c8-4b08-b7d1-50175ef4efc5|0
       flowUIDs: []
@@ -179,7 +179,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid
       uid: 9c971db0-4e09-4f26-9e56-d76dd0fe306e
-      position: {x: 1772.8289, y: 133.13623}
+      position: {x: 1780, y: 140}
       nodeUIDs:
       - 
       - 
@@ -192,7 +192,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: UnityEngineTransform.__get_localScale__UnityEngineVector3
       uid: 2f1b142f-6029-43f3-9dde-6078f30d683c
-      position: {x: 1061.5002, y: 304}
+      position: {x: 1060, y: 300}
       nodeUIDs:
       - 2cac1f01-4451-4853-ba93-c4bd61de5512|0
       flowUIDs: []
@@ -201,7 +201,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineVector3.__get_x__SystemSingle
       uid: 468c8ea3-134e-4f0b-9494-d8b636677f0c
-      position: {x: 1249.7502, y: 304.90002}
+      position: {x: 1240, y: 300}
       nodeUIDs:
       - 2f1b142f-6029-43f3-9dde-6078f30d683c|0
       flowUIDs: []
@@ -211,7 +211,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
       uid: 2010b356-c4f1-4ada-8475-3032112cfc74
-      position: {x: 1481.1002, y: 367.85004}
+      position: {x: 1480, y: 360}
       nodeUIDs:
       - 468c8ea3-134e-4f0b-9494-d8b636677f0c|0
       - 34ea2f2e-cc51-4320-93f1-937a4e4ea7df|0
@@ -223,7 +223,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineVector3.__set_x__SystemSingle
       uid: f88a8b74-8e0c-47ca-adbf-01d8f18a0d2a
-      position: {x: 1490.4502, y: 130.55}
+      position: {x: 1500, y: 140}
       nodeUIDs:
       - 2f1b142f-6029-43f3-9dde-6078f30d683c|0
       - 2010b356-c4f1-4ada-8475-3032112cfc74|0
@@ -237,7 +237,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: 55252694-c3f8-4aaf-bbbe-967fd7c7d9c7
-      position: {x: 1365.7114, y: 768.3384}
+      position: {x: 1360, y: 760}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -246,7 +246,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
       uid: 34ea2f2e-cc51-4320-93f1-937a4e4ea7df
-      position: {x: 1477.0651, y: 526.39}
+      position: {x: 1480, y: 520}
       nodeUIDs:
       - 436bfc8c-42a4-4078-8963-acbe70f3abf2|0
       - 

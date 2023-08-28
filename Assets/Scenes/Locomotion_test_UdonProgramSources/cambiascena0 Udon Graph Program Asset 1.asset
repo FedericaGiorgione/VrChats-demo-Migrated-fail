@@ -511,7 +511,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 6d753e91-765a-49c7-ab65-fea19a175b7b
-      position: {x: 40, y: -320}
+      position: {x: -0, y: -220}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -561,7 +561,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: UnityEngineTime.__get_fixedTime__SystemSingle
       uid: 28b9b0ed-c140-4b31-aaed-a330554441e1
-      position: {x: -400, y: -380}
+      position: {x: -540, y: -440}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []

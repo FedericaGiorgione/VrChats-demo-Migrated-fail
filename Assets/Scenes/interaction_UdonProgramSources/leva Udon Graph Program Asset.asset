@@ -38,18 +38,21 @@ MonoBehaviour:
     null\r\n    __value_6: %UnityEngineVector3, null\r\n    __x_0: %SystemSingle,
     null\r\n    __y_0: %SystemSingle, null\r\n    __z_0: %SystemSingle, null\r\n   
     __Single_9: %SystemSingle, null\r\n    __Single_A: %SystemSingle, null\r\n   
-    __Boolean_0: %SystemBoolean, null\r\n    __instance_C: %SystemSingle, null\r\n   
-    __obj_0: %SystemSingle, null\r\n    __instance_D: %UnityEngineGameObject, this\r\n   
-    __value_7: %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n   
-    leva: %UnityEngineGameObject, this\r\n    valore: %TMProTextMeshProUGUI, null\r\n   
-    rigid: %UnityEngineRigidbody, null\r\n    maxV: %SystemSingle, null\r\n    minV:
-    %SystemSingle, null\r\n    diff_Var: %SystemSingle, null\r\n    diff_Tot: %SystemSingle,
-    null\r\n    ruota: %UnityEngineGameObject, this\r\n    minRot: %SystemSingle,
-    null\r\n    maxRot: %SystemSingle, null\r\n    diffRotTot: %SystemSingle, null\r\n   
-    rigi: %UnityEngineRigidbody, null\r\n    angularV: %SystemSingle, null\r\n   
-    floatMIN: %SystemSingle, null\r\n    floatMAX: %SystemSingle, null\r\n    pulsante:
-    %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export
-    _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __instance_0\r\n       
+    __Boolean_0: %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n   
+    __Boolean_2: %SystemBoolean, null\r\n    __Single_B: %SystemSingle, null\r\n   
+    __Single_C: %SystemSingle, null\r\n    __Single_D: %SystemSingle, null\r\n   
+    __Single_E: %SystemSingle, null\r\n    __instance_C: %UnityEngineGameObject,
+    this\r\n    __value_7: %SystemBoolean, null\r\n    __Boolean_3: %SystemBoolean,
+    null\r\n    __instance_D: %UnityEngineGameObject, this\r\n    __value_8: %SystemBoolean,
+    null\r\n    leva: %UnityEngineGameObject, this\r\n    valore: %TMProTextMeshProUGUI,
+    null\r\n    rigid: %UnityEngineRigidbody, null\r\n    maxV: %SystemSingle, null\r\n   
+    minV: %SystemSingle, null\r\n    diff_Var: %SystemSingle, null\r\n    diff_Tot:
+    %SystemSingle, null\r\n    ruota: %UnityEngineGameObject, this\r\n    minRot:
+    %SystemSingle, null\r\n    maxRot: %SystemSingle, null\r\n    diffRotTot: %SystemSingle,
+    null\r\n    rigi: %UnityEngineRigidbody, null\r\n    angularV: %SystemSingle,
+    null\r\n    floatMIN: %SystemSingle, null\r\n    floatMAX: %SystemSingle, null\r\n   
+    pulsante: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __instance_0\r\n       
     PUSH, __symbolName_0\r\n        PUSH, floatMIN\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, __instance_1\r\n        PUSH, __symbolName_1\r\n        PUSH, floatMAX\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
@@ -88,13 +91,20 @@ MonoBehaviour:
     PUSH, __z_0\r\n        COPY\r\n        PUSH, __x_0\r\n        PUSH, __y_0\r\n       
     PUSH, __message_1\r\n        PUSH, __value_6\r\n        EXTERN, \"UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3\"\r\n       
     PUSH, __instance_B\r\n        PUSH, __value_6\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularVelocity__UnityEngineVector3__SystemVoid\"\r\n       
-    PUSH, __instance_C\r\n        PUSH, diff_Var\r\n        PUSH, __Boolean_0\r\n       
-    EXTERN, \"SystemSingle.__Equals__SystemSingle__SystemBoolean\"\r\n        PUSH,
-    __Boolean_0\r\n        JUMP_IF_FALSE, 0x0000036C\r\n        PUSH, pulsante\r\n       
-    PUSH, __instance_D\r\n        COPY\r\n        PUSH, __Boolean_1\r\n        PUSH,
-    __value_7\r\n        COPY\r\n        PUSH, __instance_D\r\n        PUSH, __value_7\r\n       
+    PUSH, diff_Var\r\n        PUSH, __Single_C\r\n        PUSH, __Boolean_1\r\n       
+    EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
+    PUSH, diff_Var\r\n        PUSH, __Single_E\r\n        PUSH, __Boolean_2\r\n       
+    EXTERN, \"SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
+    PUSH, __Boolean_1\r\n        PUSH, __Boolean_2\r\n        PUSH, __Boolean_0\r\n       
+    EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000003AC\r\n        PUSH, pulsante\r\n       
+    PUSH, __instance_C\r\n        COPY\r\n        PUSH, __Boolean_3\r\n        PUSH,
+    __value_7\r\n        COPY\r\n        PUSH, __instance_C\r\n        PUSH, __value_7\r\n       
     EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
-    JUMP, 0x0000036C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0x000003D8\r\n        PUSH, pulsante\r\n        PUSH, __instance_D\r\n       
+    COPY\r\n        PUSH, __instance_D\r\n        PUSH, __value_8\r\n        EXTERN,
+    \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n        JUMP,
+    0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -1019,9 +1029,10 @@ MonoBehaviour:
       uid: ff1860a3-c28e-4c3d-a6c5-290cc51375cf
       position: {x: 1800, y: 80}
       nodeUIDs:
-      - 06a1c0bc-8f36-4d69-95c1-b0355fee05f7|0
+      - 3aa26519-244e-4ff0-88e1-b6d3612bf8a9|0
       flowUIDs:
       - 8bdde606-39e3-4266-8859-12b19204d4ba
+      - a1f94d6a-d296-4b02-8f30-c3bb9f9cf328
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -1039,10 +1050,10 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemSingle.__Equals__SystemSingle__SystemBoolean
       uid: 06a1c0bc-8f36-4d69-95c1-b0355fee05f7
-      position: {x: 1880, y: 360}
+      position: {x: 2720, y: 280}
       nodeUIDs:
       - 
-      - 92567f36-7690-4a9c-8147-8b753a487c15|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -1051,7 +1062,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
       uid: 8bdde606-39e3-4266-8859-12b19204d4ba
-      position: {x: 2020, y: 80}
+      position: {x: 2260, y: 80}
       nodeUIDs:
       - a2830331-dc9b-461e-9110-737eb868aca5|0
       - 87c4fd3d-9c5f-4891-a45e-f2621f04860e|0
@@ -1098,7 +1109,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemBoolean
       uid: 87c4fd3d-9c5f-4891-a45e-f2621f04860e
-      position: {x: 2020, y: 240}
+      position: {x: 2140, y: -20}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -1106,6 +1117,57 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|True
+    - fullName: SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean
+      uid: 577287b7-b0dc-48d1-aaf6-2c72761c7191
+      position: {x: 1860, y: 360}
+      nodeUIDs:
+      - 92567f36-7690-4a9c-8147-8b753a487c15|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|54
+    - fullName: SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean
+      uid: 60b020c8-e15d-4f75-a249-16d5de549c45
+      position: {x: 1860, y: 500}
+      nodeUIDs:
+      - 92567f36-7690-4a9c-8147-8b753a487c15|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|60
+    - fullName: SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean
+      uid: 3aa26519-244e-4ff0-88e1-b6d3612bf8a9
+      position: {x: 2100, y: 440}
+      nodeUIDs:
+      - 577287b7-b0dc-48d1-aaf6-2c72761c7191|0
+      - 60b020c8-e15d-4f75-a249-16d5de549c45|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+      uid: a1f94d6a-d296-4b02-8f30-c3bb9f9cf328
+      position: {x: 2320, y: 240}
+      nodeUIDs:
+      - a2830331-dc9b-461e-9110-737eb868aca5|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     updateOrder: 0
   graphElementData: []
   version: 1.0.0

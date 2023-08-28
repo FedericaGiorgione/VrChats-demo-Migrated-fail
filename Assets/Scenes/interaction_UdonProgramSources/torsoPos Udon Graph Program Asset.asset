@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: torsoPos Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 46aabb67b2178d1409335c5dc5966abf,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export rigi\r\n    \r\n    __instance_0:
+    %UnityEngineRigidbody, null\r\n    __value_0: %UnityEngineVector3, null\r\n   
+    __instance_1: %UnityEngineRigidbody, null\r\n    __value_1: %UnityEngineVector3,
+    null\r\n    __instance_2: %UnityEngineRigidbody, null\r\n    rigi: %UnityEngineRigidbody,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _fixedUpdate\r\n   
+    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, rigi\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __value_0\r\n        EXTERN,
+    \"UnityEngineRigidbody.__set_angularVelocity__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, rigi\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n       
+    PUSH, __value_1\r\n        EXTERN, \"UnityEngineRigidbody.__set_velocity__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, rigi\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n       
+    EXTERN, \"UnityEngineRigidbody.__Sleep__SystemVoid\"\r\n        JUMP, 0xFFFFFFFC\r\n   
+    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Event_FixedUpdate
+      uid: ea17bf21-2f7b-42a7-af91-1ab47f448589
+      position: {x: 540, y: -240}
+      nodeUIDs: []
+      flowUIDs:
+      - c77f3566-3b0e-440f-a0f8-79c0a219e6ae
+      nodeValues: []
+    - fullName: Variable_UnityEngineRigidbody
+      uid: e7f5e046-47a3-4a99-b99f-f255e5f2af11
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|rigi
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: f9cbc483-b296-40bd-8419-37cb7d807841
+      position: {x: 480, y: -60}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|e7f5e046-47a3-4a99-b99f-f255e5f2af11
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineRigidbody.__set_angularVelocity__UnityEngineVector3__SystemVoid
+      uid: c77f3566-3b0e-440f-a0f8-79c0a219e6ae
+      position: {x: 960, y: -200}
+      nodeUIDs:
+      - f9cbc483-b296-40bd-8419-37cb7d807841|0
+      - 
+      flowUIDs:
+      - ea19a6ae-5057-44ae-90de-7a8262a68da3
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+    - fullName: UnityEngineRigidbody.__set_velocity__UnityEngineVector3__SystemVoid
+      uid: ea19a6ae-5057-44ae-90de-7a8262a68da3
+      position: {x: 1000, y: 0}
+      nodeUIDs:
+      - f9cbc483-b296-40bd-8419-37cb7d807841|0
+      - 
+      flowUIDs:
+      - 9be4c61e-643a-4f15-8ef4-a079c53c020b
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+    - fullName: UnityEngineRigidbody.__Sleep__SystemVoid
+      uid: 9be4c61e-643a-4f15-8ef4-a079c53c020b
+      position: {x: 1540, y: 0}
+      nodeUIDs:
+      - f9cbc483-b296-40bd-8419-37cb7d807841|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData: []
+  version: 1.0.0
+  showAssembly: 0
