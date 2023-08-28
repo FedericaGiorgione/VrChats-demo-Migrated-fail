@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: collisionDetect Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: cd2f2af21690f5449945b7bb652fe2ac,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    \r\n    __message_0: %SystemObject, null\r\n   
+    __String_0: %SystemString, null\r\n    __String_1: %SystemString, null\r\n   
+    __String_2: %SystemString, null\r\n    __instance_0: %UnityEngineGameObject,
+    this\r\n    onParticleCollisionOther: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onParticleCollision\r\n    \r\n    _onParticleCollision:\r\n    \r\n       
+    PUSH, __String_2\r\n        PUSH, __String_0\r\n        COPY\r\n        PUSH,
+    onParticleCollisionOther\r\n        PUSH, __instance_0\r\n        COPY\r\n       
+    PUSH, __instance_0\r\n        PUSH, __String_1\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
+    PUSH, __String_0\r\n        PUSH, __String_1\r\n        PUSH, __message_0\r\n       
+    EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
+    PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: 8967bf8e-529b-4c27-ada6-f247c71bdbf0
+      position: {x: 789.6001, y: 732.3001}
+      nodeUIDs:
+      - 36e0c7b3-777e-4a4d-8a0d-e4a8893c0ed5|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Event_OnParticleCollision
+      uid: f3a76086-da99-47c1-b8d3-6849d9035504
+      position: {x: 52.260876, y: 744.3043}
+      nodeUIDs: []
+      flowUIDs:
+      - 8967bf8e-529b-4c27-ada6-f247c71bdbf0
+      nodeValues: []
+    - fullName: UnityEngineGameObject.__get_name__SystemString
+      uid: c16655fa-96de-4d6e-b999-6ac3cbd47e21
+      position: {x: 279.45, y: 865.9501}
+      nodeUIDs:
+      - f3a76086-da99-47c1-b8d3-6849d9035504|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_SystemString
+      uid: 92b1ff5f-e013-4965-bfd9-5c62b58f9d2e
+      position: {x: 555.4501, y: 856.65015}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 'System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|Collide con: '
+    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
+      uid: 36e0c7b3-777e-4a4d-8a0d-e4a8893c0ed5
+      position: {x: 628.3, y: 944.0501}
+      nodeUIDs:
+      - 92b1ff5f-e013-4965-bfd9-5c62b58f9d2e|0
+      - c16655fa-96de-4d6e-b999-6ac3cbd47e21|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData: []
+  version: 1.0.0
+  showAssembly: 0
