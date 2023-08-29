@@ -33,7 +33,7 @@ MonoBehaviour:
     nodes:
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: 8967bf8e-529b-4c27-ada6-f247c71bdbf0
-      position: {x: 789.6001, y: 732.3001}
+      position: {x: 780, y: 740}
       nodeUIDs:
       - 36e0c7b3-777e-4a4d-8a0d-e4a8893c0ed5|0
       flowUIDs: []
@@ -42,14 +42,14 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_OnParticleCollision
       uid: f3a76086-da99-47c1-b8d3-6849d9035504
-      position: {x: 52.260876, y: 744.3043}
+      position: {x: 60, y: 760}
       nodeUIDs: []
       flowUIDs:
       - 8967bf8e-529b-4c27-ada6-f247c71bdbf0
       nodeValues: []
     - fullName: UnityEngineGameObject.__get_name__SystemString
       uid: c16655fa-96de-4d6e-b999-6ac3cbd47e21
-      position: {x: 279.45, y: 865.9501}
+      position: {x: 280, y: 860}
       nodeUIDs:
       - f3a76086-da99-47c1-b8d3-6849d9035504|0
       flowUIDs: []
@@ -58,7 +58,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 92b1ff5f-e013-4965-bfd9-5c62b58f9d2e
-      position: {x: 555.4501, y: 856.65015}
+      position: {x: 460, y: 840}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -68,7 +68,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|Collide con: '
     - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
       uid: 36e0c7b3-777e-4a4d-8a0d-e4a8893c0ed5
-      position: {x: 628.3, y: 944.0501}
+      position: {x: 620, y: 940}
       nodeUIDs:
       - 92b1ff5f-e013-4965-bfd9-5c62b58f9d2e|0
       - c16655fa-96de-4d6e-b999-6ac3cbd47e21|0

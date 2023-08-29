@@ -15,18 +15,21 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 6a3208ff6ced8d740921b82514a53ffe,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export anm\r\n    .export torso\r\n    .export
-    armsx\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __symbolName_0:
-    %SystemString, null\r\n    __value_0: %SystemObject, null\r\n    __Boolean_0:
-    %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __Boolean_2:
-    %SystemBoolean, null\r\n    __instance_1: %UnityEngineMeshRenderer, null\r\n   
-    __instance_2: %UnityEngineMeshRenderer, null\r\n    __instance_3: %UnityEngineAnimator,
-    null\r\n    __value_1: %SystemBoolean, null\r\n    __Boolean_3: %SystemBoolean,
-    null\r\n    anm: %UnityEngineAnimator, null\r\n    torso: %UnityEngineMeshRenderer,
-    null\r\n    armsx: %UnityEngineMeshRenderer, null\r\n    newVariable_2: %UnityEngineMeshRenderer,
-    null\r\n    newVariable_3: %UnityEngineMeshRenderer, null\r\n    newVariable_4:
-    %UnityEngineMeshRenderer, null\r\n    timeNOW: %SystemSingle, null\r\n    target:
-    %SystemSingle, null\r\n    timerCount: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __value_0\r\n       
+    armsx\r\n    .export udonnn\r\n    .export str\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_0: %SystemString, null\r\n    __value_0: %SystemObject,
+    null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean,
+    null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __instance_1: %UnityEngineMeshRenderer,
+    null\r\n    __instance_2: %UnityEngineMeshRenderer, null\r\n    __instance_3:
+    %UnityEngineAnimator, null\r\n    __value_1: %SystemBoolean, null\r\n    __Boolean_3:
+    %SystemBoolean, null\r\n    __instance_4: %VRCUdonUdonBehaviour, this\r\n   
+    __eventName_0: %SystemString, null\r\n    anm: %UnityEngineAnimator, null\r\n   
+    torso: %UnityEngineMeshRenderer, null\r\n    armsx: %UnityEngineMeshRenderer,
+    null\r\n    newVariable_2: %UnityEngineMeshRenderer, null\r\n    newVariable_3:
+    %UnityEngineMeshRenderer, null\r\n    newVariable_4: %UnityEngineMeshRenderer,
+    null\r\n    timeNOW: %SystemSingle, null\r\n    target: %SystemSingle, null\r\n   
+    timerCount: %SystemSingle, null\r\n    udonnn: %VRCUdonUdonBehaviour, this\r\n   
+    str: %SystemString, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export
+    _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __value_0\r\n       
     EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n        PUSH, __instance_0\r\n       
     PUSH, __symbolName_0\r\n        PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, torso\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n       
@@ -35,11 +38,14 @@ MonoBehaviour:
     PUSH, __Boolean_2\r\n        EXTERN, \"UnityEngineMeshRenderer.__get_enabled__SystemBoolean\"\r\n       
     PUSH, __Boolean_1\r\n        PUSH, __Boolean_2\r\n        PUSH, __Boolean_0\r\n       
     EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000100\r\n        PUSH, anm\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000140\r\n        PUSH, anm\r\n       
     PUSH, __instance_3\r\n        COPY\r\n        PUSH, __Boolean_3\r\n        PUSH,
     __value_1\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH, __value_1\r\n       
     EXTERN, \"UnityEngineAnimator.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
-    JUMP, 0x00000100\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    PUSH, udonnn\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH, str\r\n       
+    PUSH, __eventName_0\r\n        COPY\r\n        PUSH, __instance_4\r\n       
+    PUSH, __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
+    JUMP, 0x00000140\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -92,7 +98,8 @@ MonoBehaviour:
       nodeUIDs:
       - d6706ccb-4509-4de7-9098-24107c163d5f|0
       - fb90d62a-3b5f-40a4-82f0-9d2c55ee1977|0
-      flowUIDs: []
+      flowUIDs:
+      - 9eda5cdc-4557-4a7f-8c85-a1068180fc95
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -468,6 +475,86 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|369bfbe1-0a06-4e7c-9dc2-bdca3a405078
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
+      uid: bf262dfb-e09e-4c85-bf84-72759143ffd3
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|udonnn
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Variable_SystemString
+      uid: 0c63bfc7-06f5-457f-a36a-8360f6015d7a
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|str
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: e6ea21a6-eef2-41df-b2a6-2db8aeb7d15d
+      position: {x: 2260, y: 740}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0c63bfc7-06f5-457f-a36a-8360f6015d7a
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: aa6ddca7-1aaf-4f3c-a7f5-3840f5de9a9a
+      position: {x: 2300, y: 660}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|bf262dfb-e09e-4c85-bf84-72759143ffd3
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
+      uid: 9eda5cdc-4557-4a7f-8c85-a1068180fc95
+      position: {x: 2400, y: 440}
+      nodeUIDs:
+      - aa6ddca7-1aaf-4f3c-a7f5-3840f5de9a9a|0
+      - e6ea21a6-eef2-41df-b2a6-2db8aeb7d15d|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: 
     updateOrder: 0
