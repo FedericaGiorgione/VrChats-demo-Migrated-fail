@@ -17,109 +17,120 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export u\r\n    .export anim\r\n    .export
     variabile\r\n    .export navmeshA\r\n    .export mano\r\n    .export sfera\r\n   
     .export boool\r\n    .export vai\r\n    .export torna\r\n    .export u2\r\n   
-    .export newVariable\r\n    .export arrivoCollider\r\n    \r\n    __instance_0:
-    %VRCUdonUdonBehaviour, this\r\n    __value_0: %SystemBoolean, null\r\n    __instance_1:
-    %UnityEngineAnimator, null\r\n    __name_0: %SystemString, null\r\n    __value_1:
-    %SystemBoolean, null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __Boolean_1:
-    %SystemBoolean, null\r\n    __Single_0: %SystemSingle, null\r\n    __Single_1:
-    %SystemSingle, null\r\n    __instance_2: %UnityEngineAINavMeshAgent, null\r\n   
-    __Single_2: %SystemSingle, null\r\n    __instance_3: %UnityEngineAnimator, null\r\n   
-    __name_1: %SystemString, null\r\n    __value_2: %SystemBoolean, null\r\n    __Boolean_2:
-    %SystemBoolean, null\r\n    __instance_4: %VRCUdonUdonBehaviour, this\r\n   
-    __symbolName_0: %SystemString, null\r\n    __value_3: %SystemObject, null\r\n   
-    __Boolean_3: %SystemBoolean, null\r\n    __instance_5: %UnityEngineAnimator,
-    null\r\n    __name_2: %SystemString, null\r\n    __value_4: %SystemBoolean, null\r\n   
-    __Boolean_4: %SystemBoolean, null\r\n    __Boolean_5: %SystemBoolean, null\r\n   
+    .export newVariable\r\n    .export arrivoCollider\r\n    .export nomeVariabile\r\n   
+    .export questoUDON\r\n    .export colliderSfera\r\n    \r\n    __instance_0:
+    %UnityEngineCollider, null\r\n    __value_0: %SystemBoolean, null\r\n    __Boolean_0:
+    %SystemBoolean, null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n   
+    __symbolName_0: %SystemString, null\r\n    __value_1: %SystemObject, null\r\n   
+    __instance_2: %VRCUdonUdonBehaviour, this\r\n    __value_2: %SystemBoolean, null\r\n   
+    __instance_3: %UnityEngineAnimator, null\r\n    __name_0: %SystemString, null\r\n   
+    __value_3: %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n   
+    __Boolean_2: %SystemBoolean, null\r\n    __Single_0: %SystemSingle, null\r\n   
+    __Single_1: %SystemSingle, null\r\n    __instance_4: %UnityEngineAINavMeshAgent,
+    null\r\n    __Single_2: %SystemSingle, null\r\n    __instance_5: %UnityEngineAnimator,
+    null\r\n    __name_1: %SystemString, null\r\n    __value_4: %SystemBoolean, null\r\n   
+    __Boolean_3: %SystemBoolean, null\r\n    __instance_6: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_1: %SystemString, null\r\n    __value_5: %SystemObject,
+    null\r\n    __Boolean_4: %SystemBoolean, null\r\n    __instance_7: %UnityEngineAnimator,
+    null\r\n    __name_2: %SystemString, null\r\n    __value_6: %SystemBoolean, null\r\n   
+    __Boolean_5: %SystemBoolean, null\r\n    __Boolean_6: %SystemBoolean, null\r\n   
     __Single_3: %SystemSingle, null\r\n    __Single_4: %SystemSingle, null\r\n   
-    __instance_6: %UnityEngineAINavMeshAgent, null\r\n    __Single_5: %SystemSingle,
-    null\r\n    __instance_7: %UnityEngineAnimator, null\r\n    __name_3: %SystemString,
-    null\r\n    __value_5: %SystemBoolean, null\r\n    __Boolean_6: %SystemBoolean,
-    null\r\n    __instance_8: %VRCUdonUdonBehaviour, this\r\n    __symbolName_1:
-    %SystemString, null\r\n    __value_6: %SystemObject, null\r\n    __Boolean_7:
-    %SystemBoolean, null\r\n    __Boolean_8: %SystemBoolean, null\r\n    __instance_9:
-    %UnityEngineAnimator, null\r\n    __name_4: %SystemString, null\r\n    __value_7:
-    %SystemBoolean, null\r\n    __Boolean_9: %SystemBoolean, null\r\n    __instance_A:
-    %UnityEngineAnimator, null\r\n    __name_5: %SystemString, null\r\n    __value_8:
-    %SystemBoolean, null\r\n    __Boolean_A: %SystemBoolean, null\r\n    __instance_B:
-    %VRCUdonUdonBehaviour, this\r\n    __symbolName_2: %SystemString, null\r\n   
-    __value_9: %SystemObject, null\r\n    __Boolean_B: %SystemBoolean, null\r\n   
-    __instance_C: %VRCUdonUdonBehaviour, this\r\n    __value_A: %SystemBoolean, null\r\n   
-    __Boolean_C: %SystemBoolean, null\r\n    __instance_D: %UnityEngineAnimator,
-    null\r\n    __name_6: %SystemString, null\r\n    __value_B: %SystemBoolean, null\r\n   
-    __instance_E: %UnityEngineGameObject, this\r\n    __value_C: %SystemBoolean,
-    null\r\n    __instance_F: %VRCUdonUdonBehaviour, this\r\n    __value_D: %SystemBoolean,
-    null\r\n    __Boolean_D: %SystemBoolean, null\r\n    npc: %UnityEngineGameObject,
+    __instance_8: %UnityEngineAINavMeshAgent, null\r\n    __Single_5: %SystemSingle,
+    null\r\n    __instance_9: %UnityEngineAnimator, null\r\n    __name_3: %SystemString,
+    null\r\n    __value_7: %SystemBoolean, null\r\n    __Boolean_7: %SystemBoolean,
+    null\r\n    __instance_A: %VRCUdonUdonBehaviour, this\r\n    __symbolName_2:
+    %SystemString, null\r\n    __value_8: %SystemObject, null\r\n    __Boolean_8:
+    %SystemBoolean, null\r\n    __Boolean_9: %SystemBoolean, null\r\n    __instance_B:
+    %UnityEngineAnimator, null\r\n    __name_4: %SystemString, null\r\n    __value_9:
+    %SystemBoolean, null\r\n    __Boolean_A: %SystemBoolean, null\r\n    __instance_C:
+    %UnityEngineAnimator, null\r\n    __name_5: %SystemString, null\r\n    __value_A:
+    %SystemBoolean, null\r\n    __Boolean_B: %SystemBoolean, null\r\n    __instance_D:
+    %VRCUdonUdonBehaviour, this\r\n    __symbolName_3: %SystemString, null\r\n   
+    __value_B: %SystemObject, null\r\n    __Boolean_C: %SystemBoolean, null\r\n   
+    __instance_E: %VRCUdonUdonBehaviour, this\r\n    __value_C: %SystemBoolean, null\r\n   
+    __Boolean_D: %SystemBoolean, null\r\n    __instance_F: %UnityEngineAnimator,
+    null\r\n    __name_6: %SystemString, null\r\n    __value_D: %SystemBoolean, null\r\n   
+    __instance_10: %UnityEngineGameObject, this\r\n    __value_E: %SystemBoolean,
+    null\r\n    __instance_11: %VRCUdonUdonBehaviour, this\r\n    __value_F: %SystemBoolean,
+    null\r\n    __Boolean_E: %SystemBoolean, null\r\n    npc: %UnityEngineGameObject,
     this\r\n    u: %VRCUdonUdonBehaviour, this\r\n    anim: %UnityEngineAnimator,
     null\r\n    variabile: %SystemString, null\r\n    navmeshA: %UnityEngineAINavMeshAgent,
     null\r\n    mano: %UnityEngineGameObject, this\r\n    sfera: %UnityEngineGameObject,
     this\r\n    boool: %SystemBoolean, null\r\n    GoBack: %SystemBoolean, null\r\n   
     vai: %VRCUdonUdonBehaviour, this\r\n    torna: %VRCUdonUdonBehaviour, this\r\n   
     u2: %VRCUdonUdonBehaviour, this\r\n    newVariable: %VRCUdonUdonBehaviour, this\r\n   
-    arrivoCollider: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, u\r\n       
-    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __Boolean_0\r\n        PUSH,
-    __value_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH, __value_0\r\n       
-    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
-    PUSH, anim\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, variabile\r\n       
-    PUSH, __name_0\r\n        COPY\r\n        PUSH, __Boolean_0\r\n        PUSH,
-    __value_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH, __name_0\r\n       
-    PUSH, __value_1\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, navmeshA\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
-    __instance_2\r\n        PUSH, __Single_0\r\n        EXTERN, \"UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle\"\r\n       
+    arrivoCollider: %UnityEngineGameObject, this\r\n    nomeVariabile: %SystemBoolean,
+    null\r\n    questoUDON: %VRCUdonUdonBehaviour, this\r\n    colliderSfera: %UnityEngineCollider,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
+    \r\n    _interact:\r\n    \r\n        PUSH, colliderSfera\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, __Boolean_0\r\n        PUSH, __value_0\r\n        COPY\r\n       
+    PUSH, __instance_0\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, questoUDON\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
+    __Boolean_1\r\n        PUSH, __value_1\r\n        COPY\r\n        PUSH, __instance_1\r\n       
+    PUSH, __symbolName_0\r\n        PUSH, __value_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, u\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH, __Boolean_1\r\n       
+    PUSH, __value_2\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH,
+    __value_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, anim\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH, variabile\r\n       
+    PUSH, __name_0\r\n        COPY\r\n        PUSH, __Boolean_1\r\n        PUSH,
+    __value_3\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH, __name_0\r\n       
+    PUSH, __value_3\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, navmeshA\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH,
+    __instance_4\r\n        PUSH, __Single_0\r\n        EXTERN, \"UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle\"\r\n       
     PUSH, __Single_2\r\n        PUSH, __Single_1\r\n        COPY\r\n        PUSH,
-    __Single_0\r\n        PUSH, __Single_1\r\n        PUSH, __Boolean_1\r\n       
+    __Single_0\r\n        PUSH, __Single_1\r\n        PUSH, __Boolean_2\r\n       
     EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
-    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x000001A4\r\n        PUSH, anim\r\n       
-    PUSH, __instance_3\r\n        COPY\r\n        PUSH, variabile\r\n        PUSH,
-    __name_1\r\n        COPY\r\n        PUSH, __Boolean_2\r\n        PUSH, __value_2\r\n       
-    COPY\r\n        PUSH, __instance_3\r\n        PUSH, __name_1\r\n        PUSH,
-    __value_2\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, __Boolean_3\r\n        PUSH, __value_3\r\n        COPY\r\n        PUSH,
-    __instance_4\r\n        PUSH, __symbolName_0\r\n        PUSH, __value_3\r\n       
+    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x0000022C\r\n        PUSH, anim\r\n       
+    PUSH, __instance_5\r\n        COPY\r\n        PUSH, variabile\r\n        PUSH,
+    __name_1\r\n        COPY\r\n        PUSH, __Boolean_3\r\n        PUSH, __value_4\r\n       
+    COPY\r\n        PUSH, __instance_5\r\n        PUSH, __name_1\r\n        PUSH,
+    __value_4\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, __Boolean_4\r\n        PUSH, __value_5\r\n        COPY\r\n        PUSH,
+    __instance_6\r\n        PUSH, __symbolName_1\r\n        PUSH, __value_5\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x000001A4\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _fixedUpdate\r\n   
-    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, anim\r\n        PUSH, __instance_5\r\n       
+    JUMP, 0x0000022C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _fixedUpdate\r\n   
+    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, anim\r\n        PUSH, __instance_7\r\n       
     COPY\r\n        PUSH, variabile\r\n        PUSH, __name_2\r\n        COPY\r\n       
-    PUSH, __Boolean_4\r\n        PUSH, __value_4\r\n        COPY\r\n        PUSH,
-    __instance_5\r\n        PUSH, __name_2\r\n        PUSH, __value_4\r\n       
+    PUSH, __Boolean_5\r\n        PUSH, __value_6\r\n        COPY\r\n        PUSH,
+    __instance_7\r\n        PUSH, __name_2\r\n        PUSH, __value_6\r\n       
     EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, navmeshA\r\n        PUSH, __instance_6\r\n        COPY\r\n        PUSH,
-    __instance_6\r\n        PUSH, __Single_3\r\n        EXTERN, \"UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle\"\r\n       
+    PUSH, navmeshA\r\n        PUSH, __instance_8\r\n        COPY\r\n        PUSH,
+    __instance_8\r\n        PUSH, __Single_3\r\n        EXTERN, \"UnityEngineAINavMeshAgent.__get_remainingDistance__SystemSingle\"\r\n       
     PUSH, __Single_5\r\n        PUSH, __Single_4\r\n        COPY\r\n        PUSH,
-    __Single_3\r\n        PUSH, __Single_4\r\n        PUSH, __Boolean_5\r\n       
+    __Single_3\r\n        PUSH, __Single_4\r\n        PUSH, __Boolean_6\r\n       
     EXTERN, \"SystemSingle.__op_LessThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
-    PUSH, __Boolean_5\r\n        JUMP_IF_FALSE, 0x00000310\r\n        PUSH, anim\r\n       
-    PUSH, __instance_7\r\n        COPY\r\n        PUSH, variabile\r\n        PUSH,
-    __name_3\r\n        COPY\r\n        PUSH, __Boolean_6\r\n        PUSH, __value_5\r\n       
-    COPY\r\n        PUSH, __instance_7\r\n        PUSH, __name_3\r\n        PUSH,
-    __value_5\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, __Boolean_7\r\n        PUSH, __value_6\r\n        COPY\r\n        PUSH,
-    __instance_8\r\n        PUSH, __symbolName_1\r\n        PUSH, __value_6\r\n       
+    PUSH, __Boolean_6\r\n        JUMP_IF_FALSE, 0x00000398\r\n        PUSH, anim\r\n       
+    PUSH, __instance_9\r\n        COPY\r\n        PUSH, variabile\r\n        PUSH,
+    __name_3\r\n        COPY\r\n        PUSH, __Boolean_7\r\n        PUSH, __value_7\r\n       
+    COPY\r\n        PUSH, __instance_9\r\n        PUSH, __name_3\r\n        PUSH,
+    __value_7\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, __Boolean_8\r\n        PUSH, __value_8\r\n        COPY\r\n        PUSH,
+    __instance_A\r\n        PUSH, __symbolName_2\r\n        PUSH, __value_8\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x00000310\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export grab\r\n   
-    \r\n    grab:\r\n    \r\n        PUSH, boool\r\n        JUMP_IF_FALSE, 0x00000378\r\n       
-    PUSH, anim\r\n        PUSH, __instance_9\r\n        COPY\r\n        PUSH, __Boolean_9\r\n       
-    PUSH, __value_7\r\n        COPY\r\n        PUSH, __instance_9\r\n        PUSH,
-    __name_4\r\n        PUSH, __value_7\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    JUMP, 0x00000378\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export avvia\r\n   
-    \r\n    avvia:\r\n    \r\n        PUSH, anim\r\n        PUSH, __instance_A\r\n       
-    COPY\r\n        PUSH, __Boolean_A\r\n        PUSH, __value_8\r\n        COPY\r\n       
-    PUSH, __instance_A\r\n        PUSH, __name_5\r\n        PUSH, __value_8\r\n       
+    JUMP, 0x00000398\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export grab\r\n   
+    \r\n    grab:\r\n    \r\n        PUSH, boool\r\n        JUMP_IF_FALSE, 0x00000400\r\n       
+    PUSH, anim\r\n        PUSH, __instance_B\r\n        COPY\r\n        PUSH, __Boolean_A\r\n       
+    PUSH, __value_9\r\n        COPY\r\n        PUSH, __instance_B\r\n        PUSH,
+    __name_4\r\n        PUSH, __value_9\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    JUMP, 0x00000400\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export avvia\r\n   
+    \r\n    avvia:\r\n    \r\n        PUSH, anim\r\n        PUSH, __instance_C\r\n       
+    COPY\r\n        PUSH, __Boolean_B\r\n        PUSH, __value_A\r\n        COPY\r\n       
+    PUSH, __instance_C\r\n        PUSH, __name_5\r\n        PUSH, __value_A\r\n       
     EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, __Boolean_B\r\n        PUSH, __value_9\r\n        COPY\r\n        PUSH,
-    __instance_B\r\n        PUSH, __symbolName_2\r\n        PUSH, __value_9\r\n       
+    PUSH, __Boolean_C\r\n        PUSH, __value_B\r\n        COPY\r\n        PUSH,
+    __instance_D\r\n        PUSH, __symbolName_3\r\n        PUSH, __value_B\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, u\r\n        PUSH, __instance_C\r\n        COPY\r\n        PUSH, __Boolean_C\r\n       
-    PUSH, __value_A\r\n        COPY\r\n        PUSH, __instance_C\r\n        PUSH,
-    __value_A\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
-    PUSH, anim\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH, __instance_D\r\n       
-    PUSH, __name_6\r\n        PUSH, __value_B\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, arrivoCollider\r\n        PUSH, __instance_E\r\n        COPY\r\n       
-    PUSH, __Boolean_D\r\n        PUSH, __value_C\r\n        COPY\r\n        PUSH,
-    __instance_E\r\n        PUSH, __value_C\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
-    PUSH, u2\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __Boolean_D\r\n       
-    PUSH, __value_D\r\n        COPY\r\n        PUSH, __instance_F\r\n        PUSH,
-    __value_D\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, u\r\n        PUSH, __instance_E\r\n        COPY\r\n        PUSH, __Boolean_D\r\n       
+    PUSH, __value_C\r\n        COPY\r\n        PUSH, __instance_E\r\n        PUSH,
+    __value_C\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, anim\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __instance_F\r\n       
+    PUSH, __name_6\r\n        PUSH, __value_D\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
+    PUSH, arrivoCollider\r\n        PUSH, __instance_10\r\n        COPY\r\n       
+    PUSH, __Boolean_E\r\n        PUSH, __value_E\r\n        COPY\r\n        PUSH,
+    __instance_10\r\n        PUSH, __value_E\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, u2\r\n        PUSH, __instance_11\r\n        COPY\r\n        PUSH, __Boolean_E\r\n       
+    PUSH, __value_F\r\n        COPY\r\n        PUSH, __instance_11\r\n        PUSH,
+    __value_F\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -128,10 +139,10 @@ MonoBehaviour:
     nodes:
     - fullName: Event_Interact
       uid: daaee4a4-a31e-476f-a150-a48caf6b9058
-      position: {x: 220, y: 240}
+      position: {x: -184, y: 108}
       nodeUIDs: []
       flowUIDs:
-      - fbcf7e99-7a35-4e7d-b877-ee4b38211b45
+      - d40788e8-71b0-49b8-886a-8c99895d6589
       nodeValues: []
     - fullName: Variable_UnityEngineGameObject
       uid: 3b4951bd-dffe-4593-8ad0-0e5d6e534656
@@ -1054,6 +1065,137 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|False
+    - fullName: Variable_SystemBoolean
+      uid: 0fbcee2b-e80b-42d4-bf7f-762d24057929
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|nomeVariabile
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
+      uid: c41358b4-fca1-4277-9946-9de570b03c6c
+      position: {x: 264.8775, y: 105.065025}
+      nodeUIDs:
+      - c8280268-d122-4b6a-a37c-d6260c29d513|0
+      - 
+      - 5b4116d9-dceb-4064-87b9-1346207bd876|0
+      flowUIDs:
+      - fbcf7e99-7a35-4e7d-b877-ee4b38211b45
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|nomeVariabile
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
+      uid: 12fe9bcf-d409-4aea-9305-312382bcb296
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|questoUDON
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: c8280268-d122-4b6a-a37c-d6260c29d513
+      position: {x: -7, y: 286}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|12fe9bcf-d409-4aea-9305-312382bcb296
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Variable_UnityEngineCollider
+      uid: c745dea0-3048-409a-98fd-597057d3a2d3
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|colliderSfera
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 80936b52-006b-4df8-8a13-4a7f6f97b90b
+      position: {x: -375, y: 225}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|c745dea0-3048-409a-98fd-597057d3a2d3
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineCollider.__set_enabled__SystemBoolean__SystemVoid
+      uid: d40788e8-71b0-49b8-886a-8c99895d6589
+      position: {x: -73, y: 128}
+      nodeUIDs:
+      - 80936b52-006b-4df8-8a13-4a7f6f97b90b|0
+      - e1a1fb6d-ad91-41b2-89b1-33188e1f3738|0
+      flowUIDs:
+      - c41358b4-fca1-4277-9946-9de570b03c6c
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Const_SystemBoolean
+      uid: e1a1fb6d-ad91-41b2-89b1-33188e1f3738
+      position: {x: -134, y: 365}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
     updateOrder: 0
   graphElementData: []
   version: 1.0.0
