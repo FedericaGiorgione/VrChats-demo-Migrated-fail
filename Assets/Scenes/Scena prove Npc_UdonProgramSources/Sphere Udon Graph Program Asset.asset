@@ -36,27 +36,28 @@ MonoBehaviour:
     null\r\n    __Boolean_3: %SystemBoolean, null\r\n    __Boolean_4: %SystemBoolean,
     null\r\n    __Boolean_5: %SystemBoolean, null\r\n    __instance_E: %SystemBoolean,
     null\r\n    __obj_1: %SystemBoolean, null\r\n    __Single_0: %SystemSingle, null\r\n   
-    __Single_1: %SystemSingle, null\r\n    __Boolean_6: %SystemBoolean, null\r\n   
-    __instance_F: %VRCUdonUdonBehaviour, this\r\n    __symbolName_3: %SystemString,
-    null\r\n    __String_1: %SystemString, null\r\n    __instance_10: %VRCUdonUdonBehaviour,
-    this\r\n    __symbolName_4: %SystemString, null\r\n    __value_5: %SystemObject,
-    null\r\n    __Int32_3: %SystemInt32, null\r\n    __Int32_4: %SystemInt32, null\r\n   
-    mano: %UnityEngineGameObject, this\r\n    sfera: %UnityEngineGameObject, this\r\n   
-    ymano: %SystemSingle, null\r\n    ysfera: %SystemSingle, null\r\n    newVariable:
-    %SystemBoolean, null\r\n    cont: %SystemInt32, null\r\n    i: %SystemInt32,
-    null\r\n    anim: %UnityEngineAnimator, null\r\n    udon: %VRCUdonUdonBehaviour,
-    this\r\n    counter: %SystemSingle, null\r\n    timeNOW: %SystemSingle, null\r\n   
-    rigi: %UnityEngineRigidbody, null\r\n    udonButton: %VRCUdonUdonBehaviour, this\r\n   
-    nomeVariabile: %SystemString, null\r\n    bul: %SystemBoolean, null\r\n    UDONcolliderGrab:
-    %VRCUdonUdonBehaviour, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export
-    _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __Boolean_1\r\n       
-    PUSH, __instance_0\r\n        COPY\r\n        PUSH, udonButton\r\n        PUSH,
-    __instance_1\r\n        COPY\r\n        PUSH, nomeVariabile\r\n        PUSH,
-    __symbolName_0\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
-    __symbolName_0\r\n        PUSH, __obj_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
+    __Single_1: %SystemSingle, null\r\n    __Single_2: %SystemSingle, null\r\n   
+    __Boolean_6: %SystemBoolean, null\r\n    __instance_F: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_3: %SystemString, null\r\n    __String_1: %SystemString,
+    null\r\n    __instance_10: %VRCUdonUdonBehaviour, this\r\n    __symbolName_4:
+    %SystemString, null\r\n    __value_5: %SystemObject, null\r\n    __Int32_3: %SystemInt32,
+    null\r\n    __Int32_4: %SystemInt32, null\r\n    mano: %UnityEngineGameObject,
+    this\r\n    sfera: %UnityEngineGameObject, this\r\n    ymano: %SystemSingle,
+    null\r\n    ysfera: %SystemSingle, null\r\n    newVariable: %SystemBoolean, null\r\n   
+    cont: %SystemInt32, null\r\n    i: %SystemInt32, null\r\n    anim: %UnityEngineAnimator,
+    null\r\n    udon: %VRCUdonUdonBehaviour, this\r\n    counter: %SystemSingle,
+    null\r\n    timeNOW: %SystemSingle, null\r\n    rigi: %UnityEngineRigidbody,
+    null\r\n    udonButton: %VRCUdonUdonBehaviour, this\r\n    nomeVariabile: %SystemString,
+    null\r\n    bul: %SystemBoolean, null\r\n    UDONcolliderGrab: %VRCUdonUdonBehaviour,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _fixedUpdate\r\n   
+    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __Boolean_1\r\n        PUSH, __instance_0\r\n       
+    COPY\r\n        PUSH, udonButton\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, nomeVariabile\r\n        PUSH, __symbolName_0\r\n        COPY\r\n       
+    PUSH, __instance_1\r\n        PUSH, __symbolName_0\r\n        PUSH, __obj_0\r\n       
+    EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __obj_0\r\n        PUSH, __Boolean_0\r\n       
     EXTERN, \"SystemBoolean.__Equals__SystemObject__SystemBoolean\"\r\n        PUSH,
-    __Boolean_0\r\n        JUMP_IF_FALSE, 0x000003EC\r\n        PUSH, rigi\r\n       
+    __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000400\r\n        PUSH, rigi\r\n       
     PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH,
     __value_0\r\n        EXTERN, \"UnityEngineRigidbody.__set_angularVelocity__UnityEngineVector3__SystemVoid\"\r\n       
     PUSH, rigi\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n       
@@ -83,8 +84,9 @@ MonoBehaviour:
     PUSH, udon\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH, __String_0\r\n       
     PUSH, __eventName_0\r\n        COPY\r\n        PUSH, __instance_D\r\n       
     PUSH, __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x000003E4\r\n        PUSH, ymano\r\n        PUSH, ysfera\r\n        PUSH,
-    __instance_E\r\n        EXTERN, \"SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
+    JUMP, 0x000003F8\r\n        PUSH, __Single_2\r\n        PUSH, __Single_1\r\n       
+    COPY\r\n        PUSH, ymano\r\n        PUSH, __Single_1\r\n        PUSH, __instance_E\r\n       
+    EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
     PUSH, __Boolean_6\r\n        PUSH, __obj_1\r\n        COPY\r\n        PUSH, __instance_E\r\n       
     PUSH, __obj_1\r\n        PUSH, __Boolean_4\r\n        EXTERN, \"SystemBoolean.__Equals__SystemBoolean__SystemBoolean\"\r\n       
     PUSH, UDONcolliderGrab\r\n        PUSH, __instance_F\r\n        COPY\r\n       
@@ -93,11 +95,11 @@ MonoBehaviour:
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
     PUSH, __Boolean_4\r\n        PUSH, __Boolean_5\r\n        PUSH, __Boolean_3\r\n       
     EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n       
-    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x000003E4\r\n        PUSH, cont\r\n       
+    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x000003F8\r\n        PUSH, cont\r\n       
     PUSH, i\r\n        PUSH, __value_5\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
     PUSH, __instance_10\r\n        PUSH, __symbolName_4\r\n        PUSH, __value_5\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x000003E4\r\n        JUMP, 0x000003EC\r\n        JUMP, 0xFFFFFFFC\r\n   
+    JUMP, 0x000003F8\r\n        JUMP, 0x00000400\r\n        JUMP, 0xFFFFFFFC\r\n   
     \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -106,7 +108,7 @@ MonoBehaviour:
     nodes:
     - fullName: Event_FixedUpdate
       uid: b87d2feb-a86a-461f-907e-7808c8a75632
-      position: {x: -281, y: -276}
+      position: {x: -280, y: -280}
       nodeUIDs: []
       flowUIDs:
       - 096b1771-6920-4999-b340-5c21986a2694
@@ -315,7 +317,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 9c3ec391-c44b-402c-8676-843f1543bf4f
-      position: {x: 1187.6371, y: 205.67108}
+      position: {x: 1120, y: 200}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -326,7 +328,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: c38bcdae-2909-4fd0-bb03-821b345df808
-      position: {x: 1202.1173, y: 406.8053}
+      position: {x: 1080, y: 420}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -388,7 +390,7 @@ MonoBehaviour:
       uid: e14d67b4-688f-4428-9a31-5026570a30af
       position: {x: 1480, y: 320}
       nodeUIDs:
-      - ca0abe06-8667-4c6b-b32d-2c41158db1a5|0
+      - 9cc816f6-1a46-4689-a0db-39f89f6af3ab|0
       - da5e78fa-5d34-4170-ad79-65c3d3db1872|0
       flowUIDs: []
       nodeValues:
@@ -524,7 +526,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Branch
       uid: 491dc69d-b459-453f-87f1-12b5bea48d33
-      position: {x: 1013.3001, y: -623.3001}
+      position: {x: 1020, y: -620}
       nodeUIDs:
       - 4ee55e49-5dd8-4a45-ac4a-69a1fe6ddecc|0
       flowUIDs:
@@ -536,7 +538,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 514d76a6-7141-4b09-a37a-6c615e1b2a4a
-      position: {x: 451.50003, y: -615.0501}
+      position: {x: 460, y: -620}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -547,7 +549,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemInt32
       uid: d3d1e086-259c-4d5c-885e-d3ad01df27ae
-      position: {x: 454, y: -529}
+      position: {x: 460, y: -520}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -556,7 +558,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean
       uid: 4ee55e49-5dd8-4a45-ac4a-69a1fe6ddecc
-      position: {x: 641.05, y: -599.86005}
+      position: {x: 640, y: -600}
       nodeUIDs:
       - 514d76a6-7141-4b09-a37a-6c615e1b2a4a|0
       - d3d1e086-259c-4d5c-885e-d3ad01df27ae|0
@@ -611,7 +613,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: 8b9f93f5-0a9f-4d4c-9504-c9c46c509576
-      position: {x: 2026.45, y: 16.35749}
+      position: {x: 2020, y: 20}
       nodeUIDs:
       - 7eefb45e-811c-4e53-9263-712d6f5c8ac4|0
       - c8e521a7-bf6c-4887-a9b0-d09ca4268cfb|0
@@ -669,7 +671,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 7eefb45e-811c-4e53-9263-712d6f5c8ac4
-      position: {x: 1782.785, y: -182.0399}
+      position: {x: 1780, y: -180}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -680,7 +682,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: c8e521a7-bf6c-4887-a9b0-d09ca4268cfb
-      position: {x: 1762.785, y: -82.03993}
+      position: {x: 1760, y: -80}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -812,7 +814,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject
       uid: dcc707ec-bfd9-484f-ac23-23e01ef1e6c3
-      position: {x: 82, y: 279}
+      position: {x: 80, y: 280}
       nodeUIDs:
       - 6a43cc82-367e-4762-b6fc-e0bff2d09772|0
       - 6f368192-68df-4f6f-833b-ecc8fadd43a8|0
@@ -847,7 +849,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 6a43cc82-367e-4762-b6fc-e0bff2d09772
-      position: {x: -162.8695, y: 129.99998}
+      position: {x: -160, y: 120}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -881,7 +883,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 6f368192-68df-4f6f-833b-ecc8fadd43a8
-      position: {x: -128.8, y: 312.80005}
+      position: {x: -120, y: 320}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -915,7 +917,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: a76e6948-0bff-4f37-9272-f4bc5c0f934e
-      position: {x: -288.39127, y: -44.695717}
+      position: {x: -280, y: -40}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -926,7 +928,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemBoolean.__Equals__SystemObject__SystemBoolean
       uid: 61694231-d8a0-4e93-b25a-94553764a2fd
-      position: {x: 244, y: 107}
+      position: {x: 240, y: 100}
       nodeUIDs:
       - 74211145-c5b4-4610-9fa4-dcbbcda5be26|0
       - dcc707ec-bfd9-484f-ac23-23e01ef1e6c3|0
@@ -939,7 +941,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemBoolean
       uid: 74211145-c5b4-4610-9fa4-dcbbcda5be26
-      position: {x: 95, y: 119}
+      position: {x: 100, y: 120}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -949,7 +951,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
     - fullName: Branch
       uid: 096b1771-6920-4999-b340-5c21986a2694
-      position: {x: -75, y: -184}
+      position: {x: -80, y: -180}
       nodeUIDs:
       - 61694231-d8a0-4e93-b25a-94553764a2fd|0
       flowUIDs:
@@ -960,7 +962,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean
       uid: 0a0b92b5-c385-4d65-9b14-755d9bbd8fb6
-      position: {x: 1693.9502, y: 509.45004}
+      position: {x: 1700, y: 500}
       nodeUIDs:
       - e14d67b4-688f-4428-9a31-5026570a30af|0
       - 849ba97f-37e2-49a3-94d4-1b528d32eb4d|0
@@ -974,7 +976,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject
       uid: 849ba97f-37e2-49a3-94d4-1b528d32eb4d
-      position: {x: 1598.5001, y: 715.30005}
+      position: {x: 1600, y: 720}
       nodeUIDs:
       - fb8123ef-4256-4067-8b37-75715af3116d|0
       - 7864e0a2-726d-413f-acee-efdcaafdfce7|0
@@ -1009,7 +1011,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: fb8123ef-4256-4067-8b37-75715af3116d
-      position: {x: 1503.0502, y: 895.8501}
+      position: {x: 1500, y: 900}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -1020,13 +1022,34 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 7864e0a2-726d-413f-acee-efdcaafdfce7
-      position: {x: 1580.0001, y: 1020.1501}
+      position: {x: 1580, y: 1020}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|controllo
+    - fullName: Const_SystemSingle
+      uid: 4c3d8c2d-1f80-46b3-97b7-13ee6228c5c5
+      position: {x: 1260, y: 400}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|-1
+    - fullName: SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean
+      uid: 9cc816f6-1a46-4689-a0db-39f89f6af3ab
+      position: {x: 1860, y: 280}
+      nodeUIDs:
+      - 9c3ec391-c44b-402c-8676-843f1543bf4f|0
+      - 4c3d8c2d-1f80-46b3-97b7-13ee6228c5c5|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     updateOrder: 0
   graphElementData: []
   version: 1.0.0
