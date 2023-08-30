@@ -17,43 +17,45 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export u\r\n    .export anim\r\n    .export
     variabile\r\n    .export navmeshA\r\n    .export mano\r\n    .export sfera\r\n   
     .export boool\r\n    .export vai\r\n    .export torna\r\n    .export u2\r\n   
-    .export newVariable\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n   
-    __value_0: %SystemBoolean, null\r\n    __instance_1: %UnityEngineAnimator, null\r\n   
-    __name_0: %SystemString, null\r\n    __value_1: %SystemBoolean, null\r\n    __Boolean_0:
-    %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __Single_0:
-    %SystemSingle, null\r\n    __Single_1: %SystemSingle, null\r\n    __instance_2:
-    %UnityEngineAINavMeshAgent, null\r\n    __Single_2: %SystemSingle, null\r\n   
-    __instance_3: %UnityEngineAnimator, null\r\n    __name_1: %SystemString, null\r\n   
-    __value_2: %SystemBoolean, null\r\n    __Boolean_2: %SystemBoolean, null\r\n   
-    __instance_4: %VRCUdonUdonBehaviour, this\r\n    __symbolName_0: %SystemString,
-    null\r\n    __value_3: %SystemObject, null\r\n    __Boolean_3: %SystemBoolean,
-    null\r\n    __instance_5: %UnityEngineAnimator, null\r\n    __name_2: %SystemString,
-    null\r\n    __value_4: %SystemBoolean, null\r\n    __Boolean_4: %SystemBoolean,
-    null\r\n    __Boolean_5: %SystemBoolean, null\r\n    __Single_3: %SystemSingle,
-    null\r\n    __Single_4: %SystemSingle, null\r\n    __instance_6: %UnityEngineAINavMeshAgent,
-    null\r\n    __Single_5: %SystemSingle, null\r\n    __instance_7: %UnityEngineAnimator,
-    null\r\n    __name_3: %SystemString, null\r\n    __value_5: %SystemBoolean, null\r\n   
-    __Boolean_6: %SystemBoolean, null\r\n    __instance_8: %VRCUdonUdonBehaviour,
-    this\r\n    __symbolName_1: %SystemString, null\r\n    __value_6: %SystemObject,
-    null\r\n    __Boolean_7: %SystemBoolean, null\r\n    __Boolean_8: %SystemBoolean,
-    null\r\n    __instance_9: %UnityEngineAnimator, null\r\n    __name_4: %SystemString,
-    null\r\n    __value_7: %SystemBoolean, null\r\n    __Boolean_9: %SystemBoolean,
-    null\r\n    __instance_A: %UnityEngineAnimator, null\r\n    __name_5: %SystemString,
-    null\r\n    __value_8: %SystemBoolean, null\r\n    __Boolean_A: %SystemBoolean,
-    null\r\n    __instance_B: %VRCUdonUdonBehaviour, this\r\n    __symbolName_2:
-    %SystemString, null\r\n    __value_9: %SystemObject, null\r\n    __Boolean_B:
-    %SystemBoolean, null\r\n    __instance_C: %VRCUdonUdonBehaviour, this\r\n   
-    __value_A: %SystemBoolean, null\r\n    __Boolean_C: %SystemBoolean, null\r\n   
-    __instance_D: %UnityEngineAnimator, null\r\n    __name_6: %SystemString, null\r\n   
-    __value_B: %SystemBoolean, null\r\n    __instance_E: %VRCUdonUdonBehaviour, this\r\n   
-    __value_C: %SystemBoolean, null\r\n    __Boolean_D: %SystemBoolean, null\r\n   
-    npc: %UnityEngineGameObject, this\r\n    u: %VRCUdonUdonBehaviour, this\r\n   
-    anim: %UnityEngineAnimator, null\r\n    variabile: %SystemString, null\r\n   
-    navmeshA: %UnityEngineAINavMeshAgent, null\r\n    mano: %UnityEngineGameObject,
-    this\r\n    sfera: %UnityEngineGameObject, this\r\n    boool: %SystemBoolean,
-    null\r\n    GoBack: %SystemBoolean, null\r\n    vai: %VRCUdonUdonBehaviour, this\r\n   
-    torna: %VRCUdonUdonBehaviour, this\r\n    u2: %VRCUdonUdonBehaviour, this\r\n   
-    newVariable: %VRCUdonUdonBehaviour, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export newVariable\r\n    .export arrivoCollider\r\n    \r\n    __instance_0:
+    %VRCUdonUdonBehaviour, this\r\n    __value_0: %SystemBoolean, null\r\n    __instance_1:
+    %UnityEngineAnimator, null\r\n    __name_0: %SystemString, null\r\n    __value_1:
+    %SystemBoolean, null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __Boolean_1:
+    %SystemBoolean, null\r\n    __Single_0: %SystemSingle, null\r\n    __Single_1:
+    %SystemSingle, null\r\n    __instance_2: %UnityEngineAINavMeshAgent, null\r\n   
+    __Single_2: %SystemSingle, null\r\n    __instance_3: %UnityEngineAnimator, null\r\n   
+    __name_1: %SystemString, null\r\n    __value_2: %SystemBoolean, null\r\n    __Boolean_2:
+    %SystemBoolean, null\r\n    __instance_4: %VRCUdonUdonBehaviour, this\r\n   
+    __symbolName_0: %SystemString, null\r\n    __value_3: %SystemObject, null\r\n   
+    __Boolean_3: %SystemBoolean, null\r\n    __instance_5: %UnityEngineAnimator,
+    null\r\n    __name_2: %SystemString, null\r\n    __value_4: %SystemBoolean, null\r\n   
+    __Boolean_4: %SystemBoolean, null\r\n    __Boolean_5: %SystemBoolean, null\r\n   
+    __Single_3: %SystemSingle, null\r\n    __Single_4: %SystemSingle, null\r\n   
+    __instance_6: %UnityEngineAINavMeshAgent, null\r\n    __Single_5: %SystemSingle,
+    null\r\n    __instance_7: %UnityEngineAnimator, null\r\n    __name_3: %SystemString,
+    null\r\n    __value_5: %SystemBoolean, null\r\n    __Boolean_6: %SystemBoolean,
+    null\r\n    __instance_8: %VRCUdonUdonBehaviour, this\r\n    __symbolName_1:
+    %SystemString, null\r\n    __value_6: %SystemObject, null\r\n    __Boolean_7:
+    %SystemBoolean, null\r\n    __Boolean_8: %SystemBoolean, null\r\n    __instance_9:
+    %UnityEngineAnimator, null\r\n    __name_4: %SystemString, null\r\n    __value_7:
+    %SystemBoolean, null\r\n    __Boolean_9: %SystemBoolean, null\r\n    __instance_A:
+    %UnityEngineAnimator, null\r\n    __name_5: %SystemString, null\r\n    __value_8:
+    %SystemBoolean, null\r\n    __Boolean_A: %SystemBoolean, null\r\n    __instance_B:
+    %VRCUdonUdonBehaviour, this\r\n    __symbolName_2: %SystemString, null\r\n   
+    __value_9: %SystemObject, null\r\n    __Boolean_B: %SystemBoolean, null\r\n   
+    __instance_C: %VRCUdonUdonBehaviour, this\r\n    __value_A: %SystemBoolean, null\r\n   
+    __Boolean_C: %SystemBoolean, null\r\n    __instance_D: %UnityEngineAnimator,
+    null\r\n    __name_6: %SystemString, null\r\n    __value_B: %SystemBoolean, null\r\n   
+    __instance_E: %UnityEngineGameObject, this\r\n    __value_C: %SystemBoolean,
+    null\r\n    __instance_F: %VRCUdonUdonBehaviour, this\r\n    __value_D: %SystemBoolean,
+    null\r\n    __Boolean_D: %SystemBoolean, null\r\n    npc: %UnityEngineGameObject,
+    this\r\n    u: %VRCUdonUdonBehaviour, this\r\n    anim: %UnityEngineAnimator,
+    null\r\n    variabile: %SystemString, null\r\n    navmeshA: %UnityEngineAINavMeshAgent,
+    null\r\n    mano: %UnityEngineGameObject, this\r\n    sfera: %UnityEngineGameObject,
+    this\r\n    boool: %SystemBoolean, null\r\n    GoBack: %SystemBoolean, null\r\n   
+    vai: %VRCUdonUdonBehaviour, this\r\n    torna: %VRCUdonUdonBehaviour, this\r\n   
+    u2: %VRCUdonUdonBehaviour, this\r\n    newVariable: %VRCUdonUdonBehaviour, this\r\n   
+    arrivoCollider: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, u\r\n       
     PUSH, __instance_0\r\n        COPY\r\n        PUSH, __Boolean_0\r\n        PUSH,
     __value_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH, __value_0\r\n       
@@ -112,9 +114,12 @@ MonoBehaviour:
     __value_A\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
     PUSH, anim\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH, __instance_D\r\n       
     PUSH, __name_6\r\n        PUSH, __value_B\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n       
-    PUSH, u2\r\n        PUSH, __instance_E\r\n        COPY\r\n        PUSH, __Boolean_D\r\n       
-    PUSH, __value_C\r\n        COPY\r\n        PUSH, __instance_E\r\n        PUSH,
-    __value_C\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, arrivoCollider\r\n        PUSH, __instance_E\r\n        COPY\r\n       
+    PUSH, __Boolean_D\r\n        PUSH, __value_C\r\n        COPY\r\n        PUSH,
+    __instance_E\r\n        PUSH, __value_C\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, u2\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __Boolean_D\r\n       
+    PUSH, __value_D\r\n        COPY\r\n        PUSH, __instance_F\r\n        PUSH,
+    __value_D\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -874,7 +879,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__set_enabled__SystemBoolean__SystemVoid
       uid: 31208918-a50c-4f35-a0d5-63bc72a7ed02
-      position: {x: 2820, y: 180}
+      position: {x: 2940, y: 100}
       nodeUIDs:
       - df2593d7-0834-4273-b389-4b6fc833474d|0
       - 3de327a7-2af3-4231-a299-4320e98c9a09|0
@@ -992,7 +997,7 @@ MonoBehaviour:
       - 
       - 
       flowUIDs:
-      - 31208918-a50c-4f35-a0d5-63bc72a7ed02
+      - 9d2168cb-abcd-4cb1-846f-451dcc670dd9
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -1001,6 +1006,54 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|True
+    - fullName: Variable_UnityEngineGameObject
+      uid: 472ec74d-d4d4-403d-bf62-4445c971f42f
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|arrivoCollider
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 2768d855-b692-4348-ab04-bbdf3a145030
+      position: {x: 2620, y: -40}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|472ec74d-d4d4-403d-bf62-4445c971f42f
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+      uid: 9d2168cb-abcd-4cb1-846f-451dcc670dd9
+      position: {x: 2680, y: 80}
+      nodeUIDs:
+      - 2768d855-b692-4348-ab04-bbdf3a145030|0
+      - 3de327a7-2af3-4231-a299-4320e98c9a09|0
+      flowUIDs:
+      - 31208918-a50c-4f35-a0d5-63bc72a7ed02
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     updateOrder: 0
   graphElementData: []
   version: 1.0.0
