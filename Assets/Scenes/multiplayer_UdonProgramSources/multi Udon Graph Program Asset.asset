@@ -15,28 +15,34 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 32fd1849b5096164ea24f0586f446cd8,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export vrcP\r\n    .export meshRender\r\n   
-    .export material\r\n    \r\n    __Boolean_0: %SystemBoolean, null\r\n    __Boolean_1:
-    %SystemBoolean, null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __instance_0:
+    .export material\r\n    \r\n    __Boolean_0: %SystemBoolean, null\r\n    __instance_0:
     %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_1: %VRCSDK3ComponentsVRCPickup,
-    null\r\n    __instance_2: %UnityEngineMeshRenderer, null\r\n    __value_0: %UnityEngineMaterial,
-    null\r\n    __message_0: %SystemObject, null\r\n    __instance_3: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    vrcP: %VRCSDK3ComponentsVRCPickup, null\r\n    meshRender: %UnityEngineMeshRenderer,
-    null\r\n    material: %UnityEngineMaterial, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    null\r\n    __value_0: %SystemBoolean, null\r\n    __Boolean_1: %SystemBoolean,
+    null\r\n    __instance_2: %VRCSDK3ComponentsVRCPickup, null\r\n    __instance_3:
+    %UnityEngineMeshRenderer, null\r\n    __value_1: %UnityEngineMaterial, null\r\n   
+    __message_0: %SystemObject, null\r\n    __instance_4: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __instance_5: %VRCSDK3ComponentsVRCPickup, null\r\n    __value_2:
+    %SystemBoolean, null\r\n    vrcP: %VRCSDK3ComponentsVRCPickup, null\r\n    meshRender:
+    %UnityEngineMeshRenderer, null\r\n    material: %UnityEngineMaterial, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n    \r\n        PUSH, __instance_0\r\n       
     EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
-    PUSH, __instance_0\r\n        PUSH, __Boolean_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_isMaster__SystemBoolean\"\r\n       
-    PUSH, vrcP\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n       
-    PUSH, __Boolean_2\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_IsHeld__SystemBoolean\"\r\n       
-    PUSH, __Boolean_1\r\n        PUSH, __Boolean_2\r\n        PUSH, __Boolean_0\r\n       
-    EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000108\r\n        PUSH, meshRender\r\n       
-    PUSH, __instance_2\r\n        COPY\r\n        PUSH, material\r\n        PUSH,
-    __value_0\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH, __value_0\r\n       
+    PUSH, __instance_0\r\n        PUSH, __Boolean_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_isMaster__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x0000012C\r\n        PUSH, vrcP\r\n       
+    PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
+    __value_0\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean\"\r\n       
+    PUSH, vrcP\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n       
+    PUSH, __Boolean_1\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_IsHeld__SystemBoolean\"\r\n       
+    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000124\r\n        PUSH, meshRender\r\n       
+    PUSH, __instance_3\r\n        COPY\r\n        PUSH, material\r\n        PUSH,
+    __value_1\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH, __value_1\r\n       
     EXTERN, \"UnityEngineMeshRenderer.__set_material__UnityEngineMaterial__SystemVoid\"\r\n       
-    PUSH, __instance_0\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH,
+    PUSH, __instance_0\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH,
     __instance_0\r\n        PUSH, __message_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x00000108\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0x00000124\r\n        JUMP, 0x00000158\r\n        PUSH, vrcP\r\n       
+    PUSH, __instance_5\r\n        COPY\r\n        PUSH, __instance_5\r\n        PUSH,
+    __value_2\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -49,34 +55,9 @@ MonoBehaviour:
       flowUIDs:
       - 2ac72ad3-cfec-411c-9179-36311a033f3b
       nodeValues: []
-    - fullName: VRCSDKBaseVRCPlayerApi.__IsOwner__UnityEngineGameObject__SystemBoolean
-      uid: 9a894d53-5a2d-45fa-9366-2ed55c052eb0
-      position: {x: 1080, y: 720}
-      nodeUIDs:
-      - 
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: VRCSDK3ComponentsVRCPickup.__set_DisallowTheft__SystemBoolean
-      uid: d12b3062-94b3-416d-a880-edde4f65b5b7
-      position: {x: 1260, y: 460}
-      nodeUIDs:
-      - 
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCSDKBaseNetworking.__get_IsMaster__SystemBoolean
       uid: 0288d753-9963-458a-a193-49e4d4d094f4
-      position: {x: 540, y: 680}
+      position: {x: 320, y: 640}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
@@ -88,7 +69,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__get_isMaster__SystemBoolean
       uid: 5ad00ae2-619f-4fd8-ad89-790723630203
-      position: {x: 740, y: 400}
+      position: {x: 680, y: 380}
       nodeUIDs:
       - d7e471b0-49b2-4d4a-9a44-e6d8e6f8a6ee|0
       flowUIDs: []
@@ -97,7 +78,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: ba25762a-d739-4bb2-8fdc-55aa761229ae
-      position: {x: 1320, y: 260}
+      position: {x: 1500, y: 280}
       nodeUIDs:
       - 2d58f7fe-961d-437a-b60f-91d805d060f8|0
       flowUIDs: []
@@ -106,11 +87,12 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 2ac72ad3-cfec-411c-9179-36311a033f3b
-      position: {x: 940, y: 280}
+      position: {x: 860, y: 280}
       nodeUIDs:
-      - b546ad01-60d1-4e04-86ee-be44c92fab7b|0
+      - 5ad00ae2-619f-4fd8-ad89-790723630203|0
       flowUIDs:
-      - d9adbf52-ced5-4c77-aeb8-2726d0c7a89b
+      - 8b41ab2a-b13b-4981-ba1d-a372c7c68066
+      - ff35691c-a324-42d1-ae4b-c3becdf98804
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -160,40 +142,27 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean
       uid: 8b41ab2a-b13b-4981-ba1d-a372c7c68066
-      position: {x: 720, y: 740}
+      position: {x: 1040, y: 280}
       nodeUIDs:
+      - a552e1da-2b3f-4175-ae3e-b8e66ef0bd98|0
       - 
-      - 
-      flowUIDs: []
+      flowUIDs:
+      - ad45a77d-871d-4eef-a7a6-3ee4a3f0bb13
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
+          PublicKeyToken=b77a5c561934e089|True
     - fullName: VRCSDK3ComponentsVRCPickup.__get_IsHeld__SystemBoolean
       uid: 93b7cc70-105f-4f01-8660-be605c2d4b0b
-      position: {x: 740, y: 480}
+      position: {x: 1040, y: 200}
       nodeUIDs:
       - a552e1da-2b3f-4175-ae3e-b8e66ef0bd98|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean
-      uid: b546ad01-60d1-4e04-86ee-be44c92fab7b
-      position: {x: 920, y: 420}
-      nodeUIDs:
-      - 5ad00ae2-619f-4fd8-ad89-790723630203|0
-      - 93b7cc70-105f-4f01-8660-be605c2d4b0b|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_UnityEngineMeshRenderer
       uid: d6889f38-fe46-4c49-988b-9524cb7396af
       position: {x: 0, y: 0}
@@ -242,7 +211,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineMeshRenderer.__set_material__UnityEngineMaterial__SystemVoid
       uid: d9adbf52-ced5-4c77-aeb8-2726d0c7a89b
-      position: {x: 1200, y: 120}
+      position: {x: 1320, y: 280}
       nodeUIDs:
       - 6a286c01-09b3-4595-8e7a-28822bc38827|0
       - 8e53aff3-fccc-4f7e-ad4f-7d563aad68f7|0
@@ -255,7 +224,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemInt32
       uid: 8eb8aefc-8cb4-450e-8ba2-546108f9f370
-      position: {x: 1120, y: -20}
+      position: {x: 960, y: -200}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -296,6 +265,31 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0cfe1352-3107-4373-9269-7639abeb0f99
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    - fullName: VRCSDK3ComponentsVRCPickup.__set_pickupable__SystemBoolean
+      uid: ff35691c-a324-42d1-ae4b-c3becdf98804
+      position: {x: 1040, y: 420}
+      nodeUIDs:
+      - a552e1da-2b3f-4175-ae3e-b8e66ef0bd98|0
+      - 
+      flowUIDs:
+      - 
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Branch
+      uid: ad45a77d-871d-4eef-a7a6-3ee4a3f0bb13
+      position: {x: 1180, y: 180}
+      nodeUIDs:
+      - 93b7cc70-105f-4f01-8660-be605c2d4b0b|0
+      flowUIDs:
+      - d9adbf52-ced5-4c77-aeb8-2726d0c7a89b
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     updateOrder: 0
   graphElementData: []
   version: 1.0.0
