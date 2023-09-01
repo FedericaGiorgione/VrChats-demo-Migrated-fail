@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CA1FDFCE-4EF1-5158-51C5-F03FE5C50B29}</ProjectGuid>
+    <ProjectGuid>{C81FE45F-400B-3E82-565B-CDD651214D54}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -102,6 +102,10 @@
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\WrapRopeGameController.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\WrapRopePlayerController.cs" />
     <Compile Include="Assets\Obi\Samples\RopeAndRod\SampleResources\Scripts\Wrappable.cs" />
+    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralCurve.cs" />
+    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralMultipoint.cs" />
+    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralSimple.cs" />
+    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralStatic.cs" />
     <Compile Include="Assets\RopeController.cs" />
     <Compile Include="Assets\Scenes\SampleScene_UdonProgramSources\Button.cs" />
     <Compile Include="Assets\UDON-Liquid-Pouring-for-VRChat-main\Liquid Pouring System\Glass\Scripts\GlassCollider.cs" />
@@ -125,6 +129,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Obi\Resources\ObiMaterials\URP\ObiLightingURP.cginc" />
     <None Include="Assets\Obi\Plugins\x86_64\libOni.dll" />
+    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeSimpleCable.txt" />
     <None Include="Assets\Obi\Resources\ObiMaterials\ObiLightingBuiltIn.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -145,12 +150,15 @@
     <None Include="Assets\Obi\Resources\ObiMaterials\URP\SimpleParticleShaderURP.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeStaticCable.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\UdonSharp\UtilityScripts\ExampleUtilityTemplate.txt" />
+    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeCurveCable.txt" />
     <None Include="Assets\Obi\Plugins\x86\libOni.dll" />
+    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeMultiPointCable.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Obi\CHANGELOG_rope.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -875,91 +883,91 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VRC.Udon.Serialization.OdinSerializer.csproj">
-      <Project>{EC832552-20BF-E77F-0393-A29896DDB4D1}</Project>
+      <Project>{ED46ACC7-71B4-4ACE-2157-FD4750E82056}</Project>
       <Name>VRC.Udon.Serialization.OdinSerializer</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.ClientSim.Editor.csproj">
-      <Project>{F00A1AD6-9379-06AA-BDFD-43AA3C8E0D3B}</Project>
+      <Project>{3BD01271-D35F-BF8C-07B1-0982E7C7AFC8}</Project>
       <Name>VRC.ClientSim.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Obi.csproj">
-      <Project>{15E192B8-8252-E28C-300A-74594A8A6EBA}</Project>
+      <Project>{038E1A47-5F5E-5AD2-EB0E-495844AEBDDE}</Project>
       <Name>Obi</Name>
     </ProjectReference>
     <ProjectReference Include="UdonSharp.Runtime.csproj">
-      <Project>{9210F365-CDB5-DD70-A0F1-BF17ED600987}</Project>
+      <Project>{97E2C83D-68E5-089D-4348-15740669F5FD}</Project>
       <Name>UdonSharp.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="UdonSharp.Editor.csproj">
-      <Project>{E2A7A586-223D-DE54-7918-3DF0529D2239}</Project>
+      <Project>{D962F7C6-2CB8-801F-224B-F4BD7542D4B9}</Project>
       <Name>UdonSharp.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.csproj">
-      <Project>{1ECC1ED8-7F8A-517B-E4C9-EB83A8F18CF9}</Project>
+      <Project>{D7C06965-898E-9846-0910-FF613E994537}</Project>
       <Name>VRC.Udon</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.Editor.csproj">
-      <Project>{6675EEDE-F229-9B3E-C637-0FBBEB7B9F84}</Project>
+      <Project>{1DFE4FB7-A201-F286-6F28-8FEDB683C6DF}</Project>
       <Name>VRC.SDKBase.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Addressables.csproj">
-      <Project>{AA44AA37-0C5D-73BC-BDD3-4384248803B7}</Project>
+      <Project>{F25C5CBD-AB73-6E8A-24CA-C89B014CC9CB}</Project>
       <Name>UniTask.Addressables</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDK3.csproj">
-      <Project>{70F7CA2F-A51F-1844-2D83-69477C117C8B}</Project>
+      <Project>{ACEC6BAB-231C-A10F-2396-A8051E4CA09D}</Project>
       <Name>VRC.SDK3</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.Editor.ShaderStripping.csproj">
-      <Project>{FCC76927-2862-8AA0-4CC7-C3BF0FA6B0B9}</Project>
+      <Project>{DA38D0D2-BCC9-2877-AC7D-9834FC41437E}</Project>
       <Name>VRC.SDKBase.Editor.ShaderStripping</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.csproj">
-      <Project>{14133D0E-76C6-CDA6-655D-E6F9CC30352A}</Project>
+      <Project>{11D03B26-BC6E-385C-86CA-F024284B98C2}</Project>
       <Name>UniTask</Name>
     </ProjectReference>
     <ProjectReference Include="com.vrchat.core.vpm-resolver.Editor.csproj">
-      <Project>{397DF148-393D-BDF8-294C-8F961105A291}</Project>
+      <Project>{A02531C8-9BF8-2E4F-75E6-A9B0643A8088}</Project>
       <Name>com.vrchat.core.vpm-resolver.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{3D1227CB-06B2-3CD1-3328-8CB1872F333C}</Project>
+      <Project>{6076C9B7-CE79-EBFA-D5A0-FEEA4CA99EA2}</Project>
       <Name>UniTask.DOTween</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.csproj">
-      <Project>{3AE8F720-CE7B-2BF8-7C15-C98DDA9F4360}</Project>
+      <Project>{4695E91A-900D-0173-F5E5-3A38CFDF17DF}</Project>
       <Name>VRC.SDKBase</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.Udon.Editor.csproj">
-      <Project>{10C46CCA-1E0A-2952-F74F-05172FF84E1F}</Project>
+      <Project>{7622B046-7548-5F61-90C5-EE4EF24CF1D5}</Project>
       <Name>VRC.Udon.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRWorldToolkit.Editor.csproj">
-      <Project>{A36947B5-C2A6-6DBA-B2B1-8133ABF090EE}</Project>
+      <Project>{2AC104F5-717A-7D36-0157-9157E013BD16}</Project>
       <Name>VRWorldToolkit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
-      <Project>{F34567FF-0F48-DC30-3093-6E3E37BB5B32}</Project>
+      <Project>{1DD5A0DF-7179-1F73-4AAE-76568F8B207D}</Project>
       <Name>UniTask.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
-      <Project>{14F186DB-4E62-7A07-3274-D2FEF60362AA}</Project>
+      <Project>{04812043-5B34-7E7B-7EC2-21ADDAB84621}</Project>
       <Name>UniTask.Linq</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDK3.Editor.csproj">
-      <Project>{9A1E6265-1493-A1A2-74D5-BBB02E4148D7}</Project>
+      <Project>{D32EE960-E894-EC25-5E66-789B12AAFCB5}</Project>
       <Name>VRC.SDK3.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.SDKBase.Editor.BuildPipeline.csproj">
-      <Project>{9933A556-D858-EED2-0836-F54A5B89731C}</Project>
+      <Project>{F8EE857B-0FE9-68A6-8836-F32F0C3E4ACA}</Project>
       <Name>VRC.SDKBase.Editor.BuildPipeline</Name>
     </ProjectReference>
     <ProjectReference Include="VRC.ClientSim.csproj">
-      <Project>{F1D39B60-6921-7E4C-BF8C-2CF1446DFEA5}</Project>
+      <Project>{357B81DF-42A1-1078-C725-EE020D0ACC04}</Project>
       <Name>VRC.ClientSim</Name>
     </ProjectReference>
     <ProjectReference Include="Obi.Editor.csproj">
-      <Project>{F3B6DAA3-7AE1-85EB-1911-521F3004F0F5}</Project>
+      <Project>{97A40068-5C1F-162E-9D98-510CBE19F6A1}</Project>
       <Name>Obi.Editor</Name>
     </ProjectReference>
   </ItemGroup>
