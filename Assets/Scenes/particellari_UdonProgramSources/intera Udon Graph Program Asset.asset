@@ -348,7 +348,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle
       uid: 6c0e3707-a0d1-4796-8ce9-32957e0b32df
-      position: {x: 1600, y: 380}
+      position: {x: 1556, y: 374}
       nodeUIDs:
       - c61380a7-fb57-493a-a7a3-66386ba5c3ee|0
       - e994c1bb-3821-4369-a490-13f309191b98|0
