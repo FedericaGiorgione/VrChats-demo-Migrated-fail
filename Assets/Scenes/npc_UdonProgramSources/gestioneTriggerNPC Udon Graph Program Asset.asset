@@ -23,11 +23,12 @@ MonoBehaviour:
     __message_1: %SystemObject, null\r\n    __instance_3: %SystemInt32, null\r\n   
     __Int32_2: %SystemInt32, null\r\n    __Int32_3: %SystemInt32, null\r\n    __instance_4:
     %TMProTextMeshProUGUI, null\r\n    __value_2: %SystemString, null\r\n    __format_0:
-    %SystemString, null\r\n    __arg0_0: %SystemObject, null\r\n    __instance_5:
-    %SystemInt32, null\r\n    counter: %SystemInt32, null\r\n    i: %SystemInt32,
-    null\r\n    i2: %SystemInt32, null\r\n    textM: %TMProTextMeshProUGUI, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export aggiungi\r\n    \r\n    aggiungi:\r\n    \r\n        PUSH, counter\r\n       
-    PUSH, i\r\n        PUSH, __value_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    %SystemString, null\r\n    __arg0_0: %SystemObject, null\r\n    __String_0: %SystemString,
+    null\r\n    __instance_5: %SystemInt32, null\r\n    counter: %SystemInt32, null\r\n   
+    i: %SystemInt32, null\r\n    i2: %SystemInt32, null\r\n    textM: %TMProTextMeshProUGUI,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export aggiungi\r\n    \r\n   
+    aggiungi:\r\n    \r\n        PUSH, counter\r\n        PUSH, i\r\n        PUSH,
+    __value_0\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __symbolName_0\r\n        PUSH, __value_0\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, __value_0\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
@@ -43,7 +44,8 @@ MonoBehaviour:
     PUSH, __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export _fixedUpdate\r\n    \r\n    _fixedUpdate:\r\n   
     \r\n        PUSH, textM\r\n        PUSH, __instance_4\r\n        COPY\r\n       
-    PUSH, counter\r\n        PUSH, __arg0_0\r\n        EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n       
+    PUSH, __String_0\r\n        PUSH, __format_0\r\n        COPY\r\n        PUSH,
+    counter\r\n        PUSH, __arg0_0\r\n        EXTERN, \"SystemInt32.__ToString__SystemString\"\r\n       
     PUSH, __format_0\r\n        PUSH, __arg0_0\r\n        PUSH, __value_2\r\n       
     EXTERN, \"SystemString.__Format__SystemString_SystemObject__SystemString\"\r\n       
     PUSH, __instance_4\r\n        PUSH, __value_2\r\n        EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
@@ -280,7 +282,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_FixedUpdate
       uid: ed293f7d-6491-4df2-83a2-b463a70a0db6
-      position: {x: 360, y: 480}
+      position: {x: 345, y: 306}
       nodeUIDs: []
       flowUIDs:
       - 800a7c8d-89c2-4d8d-9531-984f1ad7fba3
@@ -321,7 +323,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid
       uid: 800a7c8d-89c2-4d8d-9531-984f1ad7fba3
-      position: {x: 780, y: 480}
+      position: {x: 785, y: 454}
       nodeUIDs:
       - bdf30f7c-cc7e-45a5-ab26-3d4f3b671ee8|0
       - 9e395a21-0de9-4d2f-8729-01daf48c19f6|0
@@ -353,19 +355,19 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Const_SystemString
       uid: b5e99e1d-2ea0-4b4e-8372-dc1f94bc2dfb
-      position: {x: 280, y: 620}
+      position: {x: 263, y: 574}
       nodeUIDs:
       - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 'System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|Target raggiunti: {0} /6'
+          PublicKeyToken=b77a5c561934e089|Target raggiunti: {0} /5'
     - fullName: SystemString.__Format__SystemString_SystemObject__SystemString
       uid: 9e395a21-0de9-4d2f-8729-01daf48c19f6
       position: {x: 620, y: 640}
       nodeUIDs:
-      - 
+      - b5e99e1d-2ea0-4b4e-8372-dc1f94bc2dfb|0
       - 8061a929-84ca-4cc2-9f95-b464fb187074|0
       flowUIDs: []
       nodeValues:
