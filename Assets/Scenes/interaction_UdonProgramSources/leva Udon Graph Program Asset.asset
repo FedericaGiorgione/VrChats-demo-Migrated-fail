@@ -23,7 +23,8 @@ MonoBehaviour:
     null\r\n    __instance_2: %VRCUdonUdonBehaviour, this\r\n    __symbolName_2:
     %SystemString, null\r\n    __value_2: %SystemObject, null\r\n    __Single_0:
     %SystemSingle, null\r\n    __Single_1: %SystemSingle, null\r\n    __message_0:
-    %SystemObject, null\r\n    __instance_3: %UnityEngineVector3, null\r\n    __instance_6:
+    %SystemObject, null\r\n    __String_0: %SystemString, null\r\n    __String_1:
+    %SystemString, null\r\n    __instance_3: %UnityEngineVector3, null\r\n    __instance_6:
     %VRCUdonUdonBehaviour, this\r\n    __symbolName_3: %SystemString, null\r\n   
     __value_3: %SystemObject, null\r\n    __f_0: %SystemSingle, null\r\n    __Single_2:
     %SystemSingle, null\r\n    __Single_3: %SystemSingle, null\r\n    __Single_4:
@@ -63,7 +64,9 @@ MonoBehaviour:
     PUSH, leva\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH, __instance_5\r\n       
     PUSH, __instance_4\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
     PUSH, __instance_4\r\n        PUSH, __instance_3\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
-    PUSH, __instance_3\r\n        PUSH, __message_0\r\n        EXTERN, \"UnityEngineVector3.__ToString__SystemString\"\r\n       
+    PUSH, __instance_3\r\n        PUSH, __String_1\r\n        EXTERN, \"UnityEngineVector3.__ToString__SystemString\"\r\n       
+    PUSH, __String_0\r\n        PUSH, __String_1\r\n        PUSH, __message_0\r\n       
+    EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     PUSH, leva\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH, __instance_3\r\n       
     PUSH, __instance_7\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH,
@@ -97,11 +100,11 @@ MonoBehaviour:
     EXTERN, \"SystemSingle.__op_LessThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
     PUSH, __Boolean_1\r\n        PUSH, __Boolean_2\r\n        PUSH, __Boolean_0\r\n       
     EXTERN, \"SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000003AC\r\n        PUSH, pulsante\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000003CC\r\n        PUSH, pulsante\r\n       
     PUSH, __instance_C\r\n        COPY\r\n        PUSH, __Boolean_3\r\n        PUSH,
     __value_7\r\n        COPY\r\n        PUSH, __instance_C\r\n        PUSH, __value_7\r\n       
     EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
-    JUMP, 0x000003D8\r\n        PUSH, pulsante\r\n        PUSH, __instance_D\r\n       
+    JUMP, 0x000003F8\r\n        PUSH, pulsante\r\n        PUSH, __instance_D\r\n       
     COPY\r\n        PUSH, __instance_D\r\n        PUSH, __value_8\r\n        EXTERN,
     \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n        JUMP,
     0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
@@ -235,7 +238,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemSingle.__ToString__SystemString
       uid: e79f5edf-b504-458c-b4dc-3403434bd851
-      position: {x: 840, y: 440}
+      position: {x: 840, y: 360}
       nodeUIDs:
       - 9c79fcda-a503-4aac-a41c-523d6bad8a66|0
       flowUIDs: []
@@ -920,7 +923,7 @@ MonoBehaviour:
       uid: 235ad313-6291-4aab-b4c3-93cc8377b718
       position: {x: 20, y: 240}
       nodeUIDs:
-      - 77946c96-7f40-4092-853a-35046b6549e8|0
+      - ae07ce62-9e18-488e-ad71-3d397c6c575b|0
       flowUIDs:
       - 03d4a506-aa44-476a-b573-6fcf4a358f55
       nodeValues:
@@ -928,7 +931,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineVector3.__ToString__SystemString
       uid: 77946c96-7f40-4092-853a-35046b6549e8
-      position: {x: -220, y: 160}
+      position: {x: -340, y: 180}
       nodeUIDs:
       - c14cac40-4c55-4c3d-be24-ae52941c5e6f|0
       flowUIDs: []
@@ -1168,6 +1171,18 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|False
+    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
+      uid: ae07ce62-9e18-488e-ad71-3d397c6c575b
+      position: {x: -100, y: 80}
+      nodeUIDs:
+      - 
+      - 77946c96-7f40-4092-853a-35046b6549e8|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|posizioneeeeee
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData: []
   version: 1.0.0

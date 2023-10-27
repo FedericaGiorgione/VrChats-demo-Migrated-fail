@@ -319,7 +319,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTime.__get_fixedTime__SystemSingle
       uid: c61380a7-fb57-493a-a7a3-66386ba5c3ee
-      position: {x: 1400, y: 260}
+      position: {x: 1360, y: 260}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
