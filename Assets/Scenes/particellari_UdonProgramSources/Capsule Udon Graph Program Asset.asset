@@ -147,7 +147,8 @@ MonoBehaviour:
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
-        stringValue: 
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":2.242000102996826,"y":0.8032190799713135,"z":0.0}
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|v3
       - unityObjectValue: {fileID: 0}
@@ -211,7 +212,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 72fdb5ea-f233-4271-828a-4367b0e02780
-      position: {x: 720, y: 600}
+      position: {x: 360, y: 640}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -245,7 +246,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: Const_SystemSingle
       uid: d51c22dd-e96e-473a-ab92-5f512ea1f0f8
-      position: {x: 800, y: 700}
+      position: {x: 680, y: 860}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -287,7 +288,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineVector3.__get_z__SystemSingle
       uid: 2ad53787-1c41-44b3-a006-fab6dd23ddd0
-      position: {x: 880, y: 600}
+      position: {x: 800, y: 600}
       nodeUIDs:
       - 72fdb5ea-f233-4271-828a-4367b0e02780|0
       flowUIDs: []
