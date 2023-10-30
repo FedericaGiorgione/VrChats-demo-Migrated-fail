@@ -150,7 +150,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: c84a03bb-b8a3-4a30-af63-608318650c99
-      position: {x: 71, y: 510.76}
+      position: {x: 145.75002, y: 511.00006}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -184,7 +184,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Const_SystemBoolean
       uid: 2ceadea6-8b8f-49fc-bbb9-121a50361e15
-      position: {x: 235, y: 607}
+      position: {x: 254.55003, y: 600.1001}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -332,7 +332,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
       uid: f124a3ff-59cf-4ad6-bd13-896f3d36283f
-      position: {x: 388, y: 707}
+      position: {x: 379.95, y: 723.1001}
       nodeUIDs:
       - c84a03bb-b8a3-4a30-af63-608318650c99|0
       - 

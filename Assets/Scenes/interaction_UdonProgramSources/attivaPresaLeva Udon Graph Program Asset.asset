@@ -689,7 +689,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid
       uid: 02d08282-198e-41e6-a4ca-be7d48dfd935
-      position: {x: 2460, y: 1220}
+      position: {x: 2517.5002, y: 1222.3}
       nodeUIDs:
       - e902c616-e1b0-42e4-b541-4ed56130dfda|0
       flowUIDs:

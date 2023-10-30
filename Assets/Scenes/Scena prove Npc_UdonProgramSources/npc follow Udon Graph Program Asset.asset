@@ -113,7 +113,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Event_FixedUpdate
       uid: dfb63153-f82f-48b6-8e1f-c28c192cfd1a
-      position: {x: 360, y: -280}
+      position: {x: 177.12999, y: -351.4175}
       nodeUIDs: []
       flowUIDs:
       - 85df4d30-2b36-4242-91ce-03b0d7c37ff5
@@ -157,7 +157,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 5559da8c-3541-4cfb-9751-ee2b710e6d7c
-      position: {x: 780, y: -480}
+      position: {x: 709.90753, y: -539.0893}
       nodeUIDs:
       - 
       flowUIDs: []

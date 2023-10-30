@@ -17,11 +17,11 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export capsula1\r\n    .export eventName\r\n   
     .export caps0\r\n    .export udon\r\n    .export capsulePickUp\r\n    .export
     capsule_1\r\n    .export collider2\r\n    .export gestionescena1\r\n    .export
-    cambiascena\r\n    .export testoCapsule\r\n    \r\n    __Boolean_0: %SystemBoolean,
-    null\r\n    __instance_0: %SystemString, null\r\n    __value_0: %SystemString,
-    null\r\n    __instance_1: %UnityEngineGameObject, this\r\n    __instance_2: %UnityEngineCollider,
-    null\r\n    onTriggerStayOther: %UnityEngineCollider, null\r\n    __instance_3:
-    %UnityEngineGameObject, this\r\n    __instance_4: %UnityEngineGameObjectArray,
+    cambiascena\r\n    .export testoCapsule\r\n    .export checkTempo\r\n    \r\n   
+    __Boolean_0: %SystemBoolean, null\r\n    __instance_0: %SystemString, null\r\n   
+    __value_0: %SystemString, null\r\n    __instance_1: %UnityEngineGameObject, this\r\n   
+    __instance_2: %UnityEngineCollider, null\r\n    onTriggerStayOther: %UnityEngineCollider,
+    null\r\n    __instance_3: %UnityEngineGameObject, this\r\n    __instance_4: %UnityEngineGameObjectArray,
     null\r\n    __index_0: %SystemInt32, null\r\n    __instance_5: %VRCUdonUdonBehaviour,
     this\r\n    __eventName_0: %SystemString, null\r\n    __instance_6: %VRCSDK3ComponentsVRCPickup,
     null\r\n    __value_1: %SystemBoolean, null\r\n    __instance_7: %VRCSDK3ComponentsVRCPickupArray,
@@ -42,16 +42,20 @@ MonoBehaviour:
     null\r\n    __instance_D: %UnityEngineGameObjectArray, null\r\n    __index_2:
     %SystemInt32, null\r\n    __Boolean_4: %SystemBoolean, null\r\n    __instance_E:
     %UnityEngineGameObject, this\r\n    __value_4: %SystemBoolean, null\r\n    __Boolean_3:
-    %SystemBoolean, null\r\n    capsula1: %SystemString, null\r\n    eventName: %SystemString,
-    null\r\n    caps0: %VRCSDK3ComponentsVRCPickup, null\r\n    counter: %SystemInt32,
-    null\r\n    i: %SystemInt32, null\r\n    udon: %VRCUdonUdonBehaviour, this\r\n   
-    capsulePickUp: %VRCSDK3ComponentsVRCPickupArray, null\r\n    capsule_1: %UnityEngineGameObjectArray,
+    %SystemBoolean, null\r\n    __Boolean_5: %SystemBoolean, null\r\n    __instance_F:
+    %SystemInt32, null\r\n    __obj_3: %SystemInt32, null\r\n    __instance_10: %UnityEngineGameObject,
+    this\r\n    __value_5: %SystemBoolean, null\r\n    __Boolean_6: %SystemBoolean,
+    null\r\n    __message_1: %SystemObject, null\r\n    __String_6: %SystemString,
+    null\r\n    capsula1: %SystemString, null\r\n    eventName: %SystemString, null\r\n   
+    caps0: %VRCSDK3ComponentsVRCPickup, null\r\n    counter: %SystemInt32, null\r\n   
+    i: %SystemInt32, null\r\n    udon: %VRCUdonUdonBehaviour, this\r\n    capsulePickUp:
+    %VRCSDK3ComponentsVRCPickupArray, null\r\n    capsule_1: %UnityEngineGameObjectArray,
     null\r\n    collider2: %UnityEngineGameObject, this\r\n    gestionescena1: %VRCUdonUdonBehaviour,
     this\r\n    cambiascena: %SystemString, null\r\n    testoCapsule: %TMProTextMeshProUGUI,
-    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _onTriggerStay\r\n   
-    \r\n    _onTriggerStay:\r\n    \r\n        PUSH, onTriggerStayOther\r\n       
-    PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n        PUSH,
-    __instance_1\r\n        EXTERN, \"UnityEngineCollider.__get_gameObject__UnityEngineGameObject\"\r\n       
+    null\r\n    checkTempo: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onTriggerStay\r\n    \r\n    _onTriggerStay:\r\n    \r\n        PUSH,
+    onTriggerStayOther\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
+    __instance_2\r\n        PUSH, __instance_1\r\n        EXTERN, \"UnityEngineCollider.__get_gameObject__UnityEngineGameObject\"\r\n       
     PUSH, __instance_1\r\n        PUSH, __instance_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
     PUSH, capsule_1\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH,
     __instance_4\r\n        PUSH, counter\r\n        PUSH, __instance_3\r\n       
@@ -59,7 +63,7 @@ MonoBehaviour:
     PUSH, __instance_3\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
     PUSH, __instance_0\r\n        PUSH, __value_0\r\n        PUSH, __Boolean_0\r\n       
     EXTERN, \"SystemString.__Contains__SystemString__SystemBoolean\"\r\n        PUSH,
-    __Boolean_0\r\n        JUMP_IF_FALSE, 0x000003D0\r\n        PUSH, udon\r\n       
+    __Boolean_0\r\n        JUMP_IF_FALSE, 0x0000046C\r\n        PUSH, udon\r\n       
     PUSH, __instance_5\r\n        COPY\r\n        PUSH, eventName\r\n        PUSH,
     __eventName_0\r\n        COPY\r\n        PUSH, __instance_5\r\n        PUSH,
     __eventName_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
@@ -99,7 +103,15 @@ MonoBehaviour:
     PUSH, collider2\r\n        PUSH, __instance_E\r\n        COPY\r\n        PUSH,
     __Boolean_3\r\n        PUSH, __value_4\r\n        COPY\r\n        PUSH, __instance_E\r\n       
     PUSH, __value_4\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
-    JUMP, 0x000003C8\r\n        JUMP, 0x000003D0\r\n        JUMP, 0xFFFFFFFC\r\n   
+    JUMP, 0x00000464\r\n        PUSH, counter\r\n        PUSH, __obj_3\r\n       
+    PUSH, __Boolean_5\r\n        EXTERN, \"SystemInt32.__Equals__SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __Boolean_5\r\n        JUMP_IF_FALSE, 0x00000464\r\n        PUSH, checkTempo\r\n       
+    PUSH, __instance_10\r\n        COPY\r\n        PUSH, __Boolean_6\r\n        PUSH,
+    __value_5\r\n        COPY\r\n        PUSH, __instance_10\r\n        PUSH, __value_5\r\n       
+    EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, __String_6\r\n        PUSH, __message_1\r\n        COPY\r\n        PUSH,
+    __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0x00000464\r\n        JUMP, 0x0000046C\r\n        JUMP, 0xFFFFFFFC\r\n   
     \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -651,7 +663,7 @@ MonoBehaviour:
       - 9306a086-09f9-46cd-8b3d-dc5863aba079|0
       flowUIDs:
       - b0f4b335-cce3-44f5-8f60-60730decfc02
-      - 
+      - 7087b335-1dc1-44c7-bbf4-a4852fe57323
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -681,9 +693,9 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
       uid: 13421a98-e135-442f-a483-9ddbd150534f
-      position: {x: 2500, y: 140}
+      position: {x: 2436.1233, y: 167.37582}
       nodeUIDs:
-      - a0750757-8cfb-4938-937b-3fcd2a1be669
+      - 428441b4-36db-4a2d-b86b-2f775a87d60c|0
       - 49861c6c-5f80-48b8-b5cb-079acf862275
       flowUIDs:
       - 8c6f1745-edc2-4db5-8ab5-da620122bb0c
@@ -695,7 +707,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: 49861c6c-5f80-48b8-b5cb-079acf862275
-      position: {x: 2380, y: 320}
+      position: {x: 2721.0562, y: -0.068165675}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -945,6 +957,63 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Inserite
           {0}/2 capsule
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemInt32.__Equals__SystemInt32__SystemBoolean
+      uid: fc07a8e9-be42-4d46-a193-f4f3a8c15065
+      position: {x: 2163.9165, y: 283.98016}
+      nodeUIDs:
+      - 1c52b039-d767-43a2-97c5-a875f9edef8b|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|2
+    - fullName: Branch
+      uid: 7087b335-1dc1-44c7-bbf4-a4852fe57323
+      position: {x: 2244.6858, y: 166.2068}
+      nodeUIDs:
+      - fc07a8e9-be42-4d46-a193-f4f3a8c15065|0
+      flowUIDs:
+      - 13421a98-e135-442f-a483-9ddbd150534f
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Variable_UnityEngineGameObject
+      uid: 17336dd4-cd3a-48ae-a28d-fbc7648eda7a
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|checkTempo
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 428441b4-36db-4a2d-b86b-2f775a87d60c
+      position: {x: 2461.0002, y: 355.35004}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|17336dd4-cd3a-48ae-a28d-fbc7648eda7a
       - unityObjectValue: {fileID: 0}
         stringValue: 
     updateOrder: 0
