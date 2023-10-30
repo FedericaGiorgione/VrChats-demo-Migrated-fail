@@ -15,10 +15,10 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 850a697f50e7f2e48aa4b81aef6b6e55,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export zonaPRE\r\n    .export zonaPOST\r\n   
-    .export stamp\r\n    .export stam\r\n    .export zone\r\n    .export zonePOST\r\n   
-    \r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __symbolName_0: %SystemString,
-    null\r\n    __value_0: %SystemObject, null\r\n    __Boolean_0: %SystemBoolean,
-    null\r\n    __instance_1: %UnityEngineGameObject, this\r\n    __value_1: %SystemBoolean,
+    .export stam\r\n    .export zone\r\n    .export zonePOST\r\n    \r\n    __instance_0:
+    %VRCUdonUdonBehaviour, this\r\n    __symbolName_0: %SystemString, null\r\n   
+    __value_0: %SystemObject, null\r\n    __Boolean_0: %SystemBoolean, null\r\n   
+    __instance_1: %UnityEngineGameObject, this\r\n    __value_1: %SystemBoolean,
     null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __instance_2: %VRCUdonUdonBehaviour,
     this\r\n    __symbolName_1: %SystemString, null\r\n    __value_2: %SystemObject,
     null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __Boolean_3: %SystemBoolean,
@@ -40,59 +40,55 @@ MonoBehaviour:
     %SystemString, null\r\n    __value_8: %SystemObject, null\r\n    __Single_4:
     %SystemSingle, null\r\n    __instance_B: %VRCUdonUdonBehaviour, this\r\n    __symbolName_5:
     %SystemString, null\r\n    __value_9: %SystemObject, null\r\n    __message_0:
-    %SystemObject, null\r\n    __instance_D: %TMProTextMeshProUGUI, null\r\n    __value_A:
-    %SystemString, null\r\n    __instance_C: %SystemSingle, null\r\n    __Single_5:
-    %SystemSingle, null\r\n    __Single_6: %SystemSingle, null\r\n    __instance_E:
+    %SystemObject, null\r\n    __instance_C: %SystemSingle, null\r\n    __Single_5:
+    %SystemSingle, null\r\n    __Single_6: %SystemSingle, null\r\n    __instance_D:
     %VRCUdonUdonBehaviour, this\r\n    __symbolName_6: %SystemString, null\r\n   
-    __value_B: %SystemObject, null\r\n    __message_1: %SystemObject, null\r\n   
-    __instance_10: %TMProTextMeshProUGUI, null\r\n    __value_C: %SystemString, null\r\n   
-    __instance_F: %SystemSingle, null\r\n    __Single_7: %SystemSingle, null\r\n   
+    __value_A: %SystemObject, null\r\n    __message_1: %SystemObject, null\r\n   
+    __instance_E: %SystemSingle, null\r\n    __Single_7: %SystemSingle, null\r\n   
     __Single_8: %SystemSingle, null\r\n    __Boolean_9: %SystemBoolean, null\r\n   
     __Boolean_A: %SystemBoolean, null\r\n    __Single_9: %SystemSingle, null\r\n   
-    __Single_A: %SystemSingle, null\r\n    __instance_11: %UnityEngineGameObject,
-    this\r\n    __value_D: %SystemBoolean, null\r\n    __instance_12: %UnityEngineGameObjectArray,
+    __Single_A: %SystemSingle, null\r\n    __instance_F: %UnityEngineGameObject,
+    this\r\n    __value_B: %SystemBoolean, null\r\n    __instance_10: %UnityEngineGameObjectArray,
     null\r\n    __index_2: %SystemInt32, null\r\n    __Boolean_B: %SystemBoolean,
     null\r\n    __Boolean_C: %SystemBoolean, null\r\n    __Single_B: %SystemSingle,
-    null\r\n    __Single_C: %SystemSingle, null\r\n    __instance_13: %UnityEngineGameObject,
-    this\r\n    __value_E: %SystemBoolean, null\r\n    __instance_14: %UnityEngineGameObjectArray,
+    null\r\n    __Single_C: %SystemSingle, null\r\n    __instance_11: %UnityEngineGameObject,
+    this\r\n    __value_C: %SystemBoolean, null\r\n    __instance_12: %UnityEngineGameObjectArray,
     null\r\n    __index_3: %SystemInt32, null\r\n    __Boolean_D: %SystemBoolean,
-    null\r\n    __instance_15: %UnityEngineGameObject, this\r\n    __value_F: %SystemBoolean,
-    null\r\n    __Boolean_E: %SystemBoolean, null\r\n    __instance_16: %VRCUdonUdonBehaviour,
-    this\r\n    __symbolName_7: %SystemString, null\r\n    __value_10: %SystemObject,
+    null\r\n    __instance_13: %UnityEngineGameObject, this\r\n    __value_D: %SystemBoolean,
+    null\r\n    __Boolean_E: %SystemBoolean, null\r\n    __instance_14: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_7: %SystemString, null\r\n    __value_E: %SystemObject,
     null\r\n    __Int32_2: %SystemInt32, null\r\n    __Int32_3: %SystemInt32, null\r\n   
-    __instance_17: %VRCUdonUdonBehaviour, this\r\n    __symbolName_8: %SystemString,
-    null\r\n    __value_11: %SystemObject, null\r\n    __Boolean_F: %SystemBoolean,
-    null\r\n    __instance_18: %VRCUdonUdonBehaviour, this\r\n    __symbolName_9:
-    %SystemString, null\r\n    __value_12: %SystemObject, null\r\n    __Single_D:
-    %SystemSingle, null\r\n    __instance_19: %VRCUdonUdonBehaviour, this\r\n   
-    __symbolName_A: %SystemString, null\r\n    __value_13: %SystemObject, null\r\n   
-    __message_2: %SystemObject, null\r\n    __instance_1B: %TMProTextMeshProUGUI,
-    null\r\n    __value_14: %SystemString, null\r\n    __instance_1A: %SystemSingle,
-    null\r\n    __Single_E: %SystemSingle, null\r\n    __Single_F: %SystemSingle,
-    null\r\n    __instance_1C: %VRCUdonUdonBehaviour, this\r\n    __symbolName_B:
-    %SystemString, null\r\n    __value_15: %SystemObject, null\r\n    __message_3:
-    %SystemObject, null\r\n    __instance_1E: %TMProTextMeshProUGUI, null\r\n   
-    __value_16: %SystemString, null\r\n    __instance_1D: %SystemSingle, null\r\n   
-    __Single_10: %SystemSingle, null\r\n    __Single_11: %SystemSingle, null\r\n   
-    zonaPRE: %UnityEngineGameObject, this\r\n    zonaPOST: %UnityEngineGameObject,
-    this\r\n    timercount: %SystemSingle, null\r\n    target: %SystemSingle, null\r\n   
-    check: %SystemBoolean, null\r\n    timeNOW: %SystemSingle, null\r\n    target2:
-    %SystemSingle, null\r\n    timeNOW2: %SystemSingle, null\r\n    timercount2:
-    %SystemSingle, null\r\n    stamp: %TMProTextMeshProUGUI, null\r\n    stam: %UnityEngineGameObject,
-    this\r\n    zone: %UnityEngineGameObjectArray, null\r\n    zonePOST: %UnityEngineGameObjectArray,
-    null\r\n    int: %SystemInt32, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export cambiascena0\r\n    \r\n    cambiascena0:\r\n    \r\n        PUSH, __Boolean_0\r\n       
-    PUSH, __value_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH,
-    __symbolName_0\r\n        PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    __instance_15: %VRCUdonUdonBehaviour, this\r\n    __symbolName_8: %SystemString,
+    null\r\n    __value_F: %SystemObject, null\r\n    __Boolean_F: %SystemBoolean,
+    null\r\n    __instance_16: %VRCUdonUdonBehaviour, this\r\n    __symbolName_9:
+    %SystemString, null\r\n    __value_10: %SystemObject, null\r\n    __Single_D:
+    %SystemSingle, null\r\n    __instance_17: %VRCUdonUdonBehaviour, this\r\n   
+    __symbolName_A: %SystemString, null\r\n    __value_11: %SystemObject, null\r\n   
+    __message_2: %SystemObject, null\r\n    __instance_18: %SystemSingle, null\r\n   
+    __Single_E: %SystemSingle, null\r\n    __Single_F: %SystemSingle, null\r\n   
+    __instance_19: %VRCUdonUdonBehaviour, this\r\n    __symbolName_B: %SystemString,
+    null\r\n    __value_12: %SystemObject, null\r\n    __message_3: %SystemObject,
+    null\r\n    __instance_1A: %SystemSingle, null\r\n    __Single_10: %SystemSingle,
+    null\r\n    __Single_11: %SystemSingle, null\r\n    zonaPRE: %UnityEngineGameObject,
+    this\r\n    zonaPOST: %UnityEngineGameObject, this\r\n    timercount: %SystemSingle,
+    null\r\n    target: %SystemSingle, null\r\n    check: %SystemBoolean, null\r\n   
+    timeNOW: %SystemSingle, null\r\n    target2: %SystemSingle, null\r\n    timeNOW2:
+    %SystemSingle, null\r\n    timercount2: %SystemSingle, null\r\n    stamp: %TMProTextMeshProUGUI,
+    null\r\n    stam: %UnityEngineGameObject, this\r\n    zone: %UnityEngineGameObjectArray,
+    null\r\n    zonePOST: %UnityEngineGameObjectArray, null\r\n    int: %SystemInt32,
+    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export cambiascena0\r\n   
+    \r\n    cambiascena0:\r\n    \r\n        PUSH, __Boolean_0\r\n        PUSH, __value_0\r\n       
+    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __symbolName_0\r\n       
+    PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, stam\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH, __Boolean_1\r\n       
     PUSH, __value_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
     __value_1\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
     PUSH, __value_2\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
     PUSH, __instance_2\r\n        PUSH, __symbolName_1\r\n        PUSH, __value_2\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, check\r\n        JUMP_IF_FALSE, 0x00000494\r\n        PUSH, timercount\r\n       
+    PUSH, check\r\n        JUMP_IF_FALSE, 0x000003EC\r\n        PUSH, timercount\r\n       
     PUSH, target\r\n        PUSH, __Boolean_3\r\n        EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
-    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x000003AC\r\n        PUSH, zone\r\n       
+    PUSH, __Boolean_3\r\n        JUMP_IF_FALSE, 0x00000358\r\n        PUSH, zone\r\n       
     PUSH, __instance_4\r\n        COPY\r\n        PUSH, __instance_4\r\n        PUSH,
     int\r\n        PUSH, __instance_3\r\n        EXTERN, \"UnityEngineGameObjectArray.__GetValue__SystemInt32__SystemObject\"\r\n       
     PUSH, __Boolean_4\r\n        PUSH, __value_3\r\n        COPY\r\n        PUSH,
@@ -117,7 +113,7 @@ MonoBehaviour:
     PUSH, __Single_4\r\n        PUSH, __value_8\r\n        COPY\r\n        PUSH,
     __instance_A\r\n        PUSH, __symbolName_4\r\n        PUSH, __value_8\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x000003A4\r\n        PUSH, __Single_5\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
+    JUMP, 0x00000350\r\n        PUSH, __Single_5\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
     PUSH, __Single_5\r\n        PUSH, timeNOW\r\n        PUSH, __value_9\r\n       
     EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
     PUSH, __instance_B\r\n        PUSH, __symbolName_5\r\n        PUSH, __value_9\r\n       
@@ -125,76 +121,60 @@ MonoBehaviour:
     PUSH, __value_9\r\n        PUSH, __instance_C\r\n        COPY\r\n        PUSH,
     __value_9\r\n        PUSH, __message_0\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, stamp\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH, __value_9\r\n       
-    PUSH, __instance_C\r\n        COPY\r\n        PUSH, __message_0\r\n        PUSH,
-    __value_A\r\n        COPY\r\n        PUSH, __instance_D\r\n        PUSH, __message_0\r\n       
-    EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x0000048C\r\n        PUSH, __Single_7\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
-    PUSH, __Single_7\r\n        PUSH, timeNOW\r\n        PUSH, __value_B\r\n       
+    JUMP, 0x000003E4\r\n        PUSH, __Single_7\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
+    PUSH, __Single_7\r\n        PUSH, timeNOW\r\n        PUSH, __value_A\r\n       
     EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __instance_E\r\n        PUSH, __symbolName_6\r\n        PUSH, __value_B\r\n       
+    PUSH, __instance_D\r\n        PUSH, __symbolName_6\r\n        PUSH, __value_A\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __value_B\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH,
-    __value_B\r\n        PUSH, __message_1\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
+    PUSH, __value_A\r\n        PUSH, __instance_E\r\n        COPY\r\n        PUSH,
+    __value_A\r\n        PUSH, __message_1\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
     PUSH, __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, stamp\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH, __value_B\r\n       
-    PUSH, __instance_F\r\n        COPY\r\n        PUSH, __message_1\r\n        PUSH,
-    __value_C\r\n        COPY\r\n        PUSH, __instance_10\r\n        PUSH, __message_1\r\n       
-    EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x00000494\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _fixedUpdate\r\n   
+    JUMP, 0x000003EC\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _fixedUpdate\r\n   
     \r\n    _fixedUpdate:\r\n    \r\n        PUSH, check\r\n        JUMP_IF_FALSE,
-    0x0000088C\r\n        PUSH, timercount\r\n        PUSH, target\r\n        PUSH,
+    0x0000073C\r\n        PUSH, timercount\r\n        PUSH, target\r\n        PUSH,
     __Boolean_A\r\n        EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
-    PUSH, __Boolean_A\r\n        JUMP_IF_FALSE, 0x000007A4\r\n        PUSH, zone\r\n       
-    PUSH, __instance_12\r\n        COPY\r\n        PUSH, __instance_12\r\n       
-    PUSH, int\r\n        PUSH, __instance_11\r\n        EXTERN, \"UnityEngineGameObjectArray.__GetValue__SystemInt32__SystemObject\"\r\n       
-    PUSH, __Boolean_B\r\n        PUSH, __value_D\r\n        COPY\r\n        PUSH,
-    __instance_11\r\n        PUSH, __value_D\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, __Boolean_A\r\n        JUMP_IF_FALSE, 0x000006A8\r\n        PUSH, zone\r\n       
+    PUSH, __instance_10\r\n        COPY\r\n        PUSH, __instance_10\r\n       
+    PUSH, int\r\n        PUSH, __instance_F\r\n        EXTERN, \"UnityEngineGameObjectArray.__GetValue__SystemInt32__SystemObject\"\r\n       
+    PUSH, __Boolean_B\r\n        PUSH, __value_B\r\n        COPY\r\n        PUSH,
+    __instance_F\r\n        PUSH, __value_B\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
     PUSH, timercount\r\n        PUSH, target2\r\n        PUSH, __Boolean_C\r\n       
     EXTERN, \"SystemSingle.__op_GreaterThanOrEqual__SystemSingle_SystemSingle__SystemBoolean\"\r\n       
-    PUSH, __Boolean_C\r\n        JUMP_IF_FALSE, 0x000006BC\r\n        PUSH, zonePOST\r\n       
-    PUSH, __instance_14\r\n        COPY\r\n        PUSH, __instance_14\r\n       
-    PUSH, int\r\n        PUSH, __instance_13\r\n        EXTERN, \"UnityEngineGameObjectArray.__GetValue__SystemInt32__SystemObject\"\r\n       
-    PUSH, __Boolean_D\r\n        PUSH, __value_E\r\n        COPY\r\n        PUSH,
-    __instance_13\r\n        PUSH, __value_E\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
-    PUSH, stam\r\n        PUSH, __instance_15\r\n        COPY\r\n        PUSH, __Boolean_E\r\n       
-    PUSH, __value_F\r\n        COPY\r\n        PUSH, __instance_15\r\n        PUSH,
-    __value_F\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
-    PUSH, int\r\n        PUSH, __Int32_3\r\n        PUSH, __value_10\r\n        EXTERN,
+    PUSH, __Boolean_C\r\n        JUMP_IF_FALSE, 0x00000614\r\n        PUSH, zonePOST\r\n       
+    PUSH, __instance_12\r\n        COPY\r\n        PUSH, __instance_12\r\n       
+    PUSH, int\r\n        PUSH, __instance_11\r\n        EXTERN, \"UnityEngineGameObjectArray.__GetValue__SystemInt32__SystemObject\"\r\n       
+    PUSH, __Boolean_D\r\n        PUSH, __value_C\r\n        COPY\r\n        PUSH,
+    __instance_11\r\n        PUSH, __value_C\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, stam\r\n        PUSH, __instance_13\r\n        COPY\r\n        PUSH, __Boolean_E\r\n       
+    PUSH, __value_D\r\n        COPY\r\n        PUSH, __instance_13\r\n        PUSH,
+    __value_D\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, int\r\n        PUSH, __Int32_3\r\n        PUSH, __value_E\r\n        EXTERN,
     \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
-    PUSH, __instance_16\r\n        PUSH, __symbolName_7\r\n        PUSH, __value_10\r\n       
+    PUSH, __instance_14\r\n        PUSH, __symbolName_7\r\n        PUSH, __value_E\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __Boolean_F\r\n        PUSH, __value_11\r\n        COPY\r\n        PUSH,
-    __instance_17\r\n        PUSH, __symbolName_8\r\n        PUSH, __value_11\r\n       
+    PUSH, __Boolean_F\r\n        PUSH, __value_F\r\n        COPY\r\n        PUSH,
+    __instance_15\r\n        PUSH, __symbolName_8\r\n        PUSH, __value_F\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __Single_D\r\n        PUSH, __value_12\r\n        COPY\r\n        PUSH,
-    __instance_18\r\n        PUSH, __symbolName_9\r\n        PUSH, __value_12\r\n       
+    PUSH, __Single_D\r\n        PUSH, __value_10\r\n        COPY\r\n        PUSH,
+    __instance_16\r\n        PUSH, __symbolName_9\r\n        PUSH, __value_10\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x0000079C\r\n        PUSH, __Single_E\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
-    PUSH, __Single_E\r\n        PUSH, timeNOW\r\n        PUSH, __value_13\r\n       
+    JUMP, 0x000006A0\r\n        PUSH, __Single_E\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
+    PUSH, __Single_E\r\n        PUSH, timeNOW\r\n        PUSH, __value_11\r\n       
     EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __instance_19\r\n        PUSH, __symbolName_A\r\n        PUSH, __value_13\r\n       
+    PUSH, __instance_17\r\n        PUSH, __symbolName_A\r\n        PUSH, __value_11\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __value_13\r\n        PUSH, __instance_1A\r\n        COPY\r\n        PUSH,
-    __value_13\r\n        PUSH, __message_2\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
+    PUSH, __value_11\r\n        PUSH, __instance_18\r\n        COPY\r\n        PUSH,
+    __value_11\r\n        PUSH, __message_2\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
     PUSH, __message_2\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, stamp\r\n        PUSH, __instance_1B\r\n        COPY\r\n        PUSH, __value_13\r\n       
-    PUSH, __instance_1A\r\n        COPY\r\n        PUSH, __message_2\r\n        PUSH,
-    __value_14\r\n        COPY\r\n        PUSH, __instance_1B\r\n        PUSH, __message_2\r\n       
-    EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x00000884\r\n        PUSH, __Single_10\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
-    PUSH, __Single_10\r\n        PUSH, timeNOW\r\n        PUSH, __value_15\r\n       
+    JUMP, 0x00000734\r\n        PUSH, __Single_10\r\n        EXTERN, \"UnityEngineTime.__get_fixedTime__SystemSingle\"\r\n       
+    PUSH, __Single_10\r\n        PUSH, timeNOW\r\n        PUSH, __value_12\r\n       
     EXTERN, \"SystemSingle.__op_Subtraction__SystemSingle_SystemSingle__SystemSingle\"\r\n       
-    PUSH, __instance_1C\r\n        PUSH, __symbolName_B\r\n        PUSH, __value_15\r\n       
+    PUSH, __instance_19\r\n        PUSH, __symbolName_B\r\n        PUSH, __value_12\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
-    PUSH, __value_15\r\n        PUSH, __instance_1D\r\n        COPY\r\n        PUSH,
-    __value_15\r\n        PUSH, __message_3\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
+    PUSH, __value_12\r\n        PUSH, __instance_1A\r\n        COPY\r\n        PUSH,
+    __value_12\r\n        PUSH, __message_3\r\n        EXTERN, \"SystemSingle.__ToString__SystemString\"\r\n       
     PUSH, __message_3\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, stamp\r\n        PUSH, __instance_1E\r\n        COPY\r\n        PUSH, __value_15\r\n       
-    PUSH, __instance_1D\r\n        COPY\r\n        PUSH, __message_3\r\n        PUSH,
-    __value_16\r\n        COPY\r\n        PUSH, __instance_1E\r\n        PUSH, __message_3\r\n       
-    EXTERN, \"TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid\"\r\n       
-    JUMP, 0x0000088C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0x0000073C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -428,7 +408,7 @@ MonoBehaviour:
       nodeUIDs:
       - e7479060-9905-4f02-8710-8eae361cb92f|0
       flowUIDs:
-      - b226d9f7-092d-458a-8a36-a1a14b7e2dbb
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -787,7 +767,7 @@ MonoBehaviour:
       nodeUIDs:
       - 396a7823-b0a8-4124-8374-5e59980df7da
       flowUIDs:
-      - 9fb52cf9-bee1-4dbe-87d3-e26b2a14495f
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -808,7 +788,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|stamp
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|True
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|False
@@ -830,7 +810,7 @@ MonoBehaviour:
       position: {x: 880, y: 600}
       nodeUIDs:
       - 4e0b4316-3d91-4f2f-a3db-fdf34a8bdb03|0
-      - e7479060-9905-4f02-8710-8eae361cb92f|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -842,7 +822,7 @@ MonoBehaviour:
       position: {x: 2080, y: 460}
       nodeUIDs:
       - dc5ba212-e265-4882-aa4f-7ed1c4912509
-      - 396a7823-b0a8-4124-8374-5e59980df7da|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
